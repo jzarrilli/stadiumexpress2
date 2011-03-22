@@ -1,0 +1,25 @@
+<h1>Listing stands</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stands.each do |stand| %>
+  <tr>
+    <td><%= stand.name %></td>
+    <td><%= stand.location %></td>
+    <td><%= link_to 'Show', stand %></td>
+    <td><%= link_to 'Edit', edit_stand_path(stand) %></td>
+    <td><%= link_to 'Destroy', stand, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Stand', new_stand_path %>

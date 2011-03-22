@@ -1,0 +1,2 @@
+module StadiaHelper
+end

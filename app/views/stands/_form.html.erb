@@ -1,0 +1,25 @@
+<%= form_for(@stand) do |f| %>
+  <% if @stand.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stand.errors.count, "error") %> prohibited this stand from being saved:</h2>
+
+      <ul>
+      <% @stand.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
