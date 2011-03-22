@@ -11,7 +11,7 @@
 
 <% @stands.each do |stand| %>
   <tr>
-    <td><%= stand.name %></td>
+    <td><%= link_to stand.name, store_path %></td>
     <td><%= stand.location %></td>
     <td><%= link_to 'Show', stand %></td>
     <td><%= link_to 'Edit', edit_stand_path(stand) %></td>

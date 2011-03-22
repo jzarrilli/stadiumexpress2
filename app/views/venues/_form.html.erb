@@ -1,10 +1,10 @@
-<%= form_for(@stadium) do |f| %>
-  <% if @stadium.errors.any? %>
+<%= form_for(@venue) do |f| %>
+  <% if @venue.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@stadium.errors.count, "error") %> prohibited this stadium from being saved:</h2>
+      <h2><%= pluralize(@venue.errors.count, "error") %> prohibited this venue from being saved:</h2>
 
       <ul>
-      <% @stadium.errors.full_messages.each do |msg| %>
+      <% @venue.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

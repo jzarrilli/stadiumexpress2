@@ -7,9 +7,9 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
-  resources :stands
+  resources :venues
 
-  resources :stadia
+  resources :stands
 
   get 'admin' => 'admin#index'
 
