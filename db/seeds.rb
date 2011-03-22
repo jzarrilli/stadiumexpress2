@@ -35,3 +35,5 @@ Product.create(:title => 'Salad',
       </p>},
   :image_url => '/images/salad.jpg',
   :price => 6.05)
+
+User.create(:name => 'admin', :password => 'password')

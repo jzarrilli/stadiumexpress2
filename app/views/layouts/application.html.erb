@@ -14,7 +14,9 @@
 			<% end %>
 		</div>
 				
-<a href="http://www....">Home</a><br /> <a href="http://www..../faq">Questions</a><br /> <a href="http://www..../news">News</a><br /> <a href="http://www..../contact">Contact</a><br />
+<%= link_to "Home", store_path%>
+<%= link_to "Products", products_path%>
+
 
 <% if session[:user_id] %>
 <br />

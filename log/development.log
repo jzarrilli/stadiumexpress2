@@ -3980,3 +3980,77 @@ Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/
   [1m[35mSQL (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110226200917')
   [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110227194952')[0m
   [1m[35mSQL (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110227195020')
+  [1m[36mUser Load (6.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mAREL (1.4ms)[0m  DELETE FROM "products" WHERE 1=1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products"."id" FROM "products" WHERE ("products"."title" = 'Philly Cheesesteak') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "products" ("description", "image_url", "title", "updated_at", "price", "created_at") VALUES ('<p>
+ <em>The Philly Cheesesteak</em> The cheesesteak was developed in the early 20th century 
+ "by combining frizzled beef, onions, and cheese in a small loaf of bread," according to a 
+ 1987 exhibition catalog published by the Library Company of Philadelphia and the Historical Society 
+ of Pennsylvania.
+ </p>', '/images/phillycheesesteak.jpg', 'Philly Cheesesteak', '2011-03-22 15:51:51.135681', 8.55, '2011-03-22 15:51:51.135681')
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products"."id" FROM "products" WHERE ("products"."title" = 'Le Hamburger') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "products" ("description", "image_url", "title", "updated_at", "price", "created_at") VALUES ('<p>
+ Le Royale or Le Big Mac
+ </p>', '/images/hamburger.jpg', 'Le Hamburger', '2011-03-22 15:51:51.139079', 5.85, '2011-03-22 15:51:51.139079')
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products"."id" FROM "products" WHERE ("products"."title" = 'Salad') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "products" ("description", "image_url", "title", "updated_at", "price", "created_at") VALUES ('<p>
+ <em>Caesar''s</em> the healthy option
+ </p>', '/images/salad.jpg', 'Salad', '2011-03-22 15:51:51.141690', 6.05, '2011-03-22 15:51:51.141690')
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE ("users"."name" = 'admin') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("hashed_password", "updated_at", "name", "salt", "created_at") VALUES ('853d4ee033818d38d5f17a5038766e6795b9ef1f3cbc430f7c4e65e824c1828e', '2011-03-22 15:51:51.194138', 'admin', '21750891400.102059990347602', '2011-03-22 15:51:51.194138')
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 11:52:46 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES ('2011-03-22 15:52:46.817188', '2011-03-22 15:52:46.817188')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 10)
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.1ms)
+Rendered store/index.html.erb within layouts/application (89.4ms)
+Completed   in 174ms
+
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x10548e198>:0x10548c460>):
+    14: 			<% end %>
+    15: 		</div>
+    16: 				
+    17: <%= link_to "Home", root_path%>
+    18: <%= link_to "Products", products_path%>
+    19: 
+    20: 
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__1239255639_2191800320_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 11:54:32 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "carts" ("updated_at", "created_at") VALUES ('2011-03-22 15:54:32.633890', '2011-03-22 15:54:32.633890')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 11)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.2ms)
+Rendered store/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 90ms (Views: 25.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 11:54:32 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
