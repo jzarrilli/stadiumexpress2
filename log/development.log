@@ -5111,3 +5111,232 @@ ActionController::RoutingError (No route matches "/images/logo.png"):
   
 
 Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 12:35:41 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 11 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 11)[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 11)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+Rendered line_items/_line_item.html.erb (5.9ms)
+Rendered carts/_cart.html.erb (10.4ms)
+Rendered store/index.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 54ms (Views: 37.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:35:41 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Mar 22 12:36:15 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:36:15 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Tue Mar 22 12:36:16 -0400 2011
+  Processing by OrdersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "orders"
+Rendered orders/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 38ms (Views: 23.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:36:17 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at Tue Mar 22 12:36:24 -0400 2011
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+Rendered products/index.html.erb within layouts/application (62.6ms)
+Completed 200 OK in 81ms (Views: 66.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:36:24 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Mar 22 12:36:25 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+Rendered users/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 22ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:36:25 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Mar 22 12:39:32 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+Rendered users/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 80ms (Views: 14.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:39:32 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 12:39:43 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 11 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 11)[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 11)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+Rendered line_items/_line_item.html.erb (7.1ms)
+Rendered carts/_cart.html.erb (37.4ms)
+Rendered store/index.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 77ms (Views: 61.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:39:43 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 12:40:27 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 11 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 11)
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 11)[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.html.erb (5.7ms)
+Rendered carts/_cart.html.erb (9.4ms)
+Rendered store/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 48ms (Views: 33.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:40:27 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 12:40:31 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 11 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 11)[0m
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 11)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+Rendered line_items/_line_item.html.erb (5.9ms)
+Rendered carts/_cart.html.erb (9.6ms)
+Rendered store/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 48ms (Views: 32.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:40:31 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/logout" for 127.0.0.1 at Tue Mar 22 12:40:36 -0400 2011
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mChBLYlGRTUJOVxbO1p72XjpnVedEKBsPgDs8zpqAvc="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 12:40:36 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 11 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 11)
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 11)[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.html.erb (5.7ms)
+Rendered carts/_cart.html.erb (10.0ms)
+Rendered store/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 51ms (Views: 36.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:40:36 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Mar 22 12:40:38 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:40:38 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at Tue Mar 22 12:40:41 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"mChBLYlGRTUJOVxbO1p72XjpnVedEKBsPgDs8zpqAvc=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'admin' LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 10ms
+
+
+Started GET "/admin" for 127.0.0.1 at Tue Mar 22 12:40:41 -0400 2011
+  Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "orders"[0m
+Rendered admin/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 71ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Tue Mar 22 12:40:41 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
