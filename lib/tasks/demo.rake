@@ -29,6 +29,17 @@ task :demo => :environment do
     :image_url => '/images/salad.jpg',
     :price => 6.05)
 
+  Venue.create(:name => 'Franklin Field')
+  
+  Stand.create(:name => 'Stand 1', :location => 'Location 1')
+  
+  User.create(:name => 'Lindsey', :password => 'lindsey')
+  
+  User.create(:name => 'Jordan', :password => 'jordan')
+  
+  User.create(:name => 'Tosin', :password => 'tosin')
+  
+  User.create(:name => 'Adam', :password => 'adam')
   
 end
 
