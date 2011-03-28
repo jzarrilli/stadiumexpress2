@@ -5486,3 +5486,1281 @@ Migrating to CreateVenues (20110322180144)
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("stands")
   [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
   [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("venues")
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 24 13:36:02 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 46ms
+
+
+Started GET "/login" for 127.0.0.1 at Thu Mar 24 13:36:02 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:36:03 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:36:03 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at Thu Mar 24 13:46:18 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:18 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:18 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at Thu Mar 24 13:46:23 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'admin' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 16ms
+
+
+Started GET "/admin" for 127.0.0.1 at Thu Mar 24 13:46:23 -0400 2011
+  Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mSQL (16.3ms)[0m  SELECT COUNT(*) FROM "orders"
+Rendered admin/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 74ms (Views: 9.1ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:23 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:23 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 24 13:46:27 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mVenue Load (0.4ms)[0m  SELECT "venues".* FROM "venues"
+Rendered venues/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 51ms (Views: 38.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:27 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:28 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stands" for 127.0.0.1 at Thu Mar 24 13:46:34 -0400 2011
+  Processing by StandsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mStand Load (0.2ms)[0m  SELECT "stands".* FROM "stands"
+Rendered stands/index.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 65ms (Views: 53.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:34 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:34 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/store/index" for 127.0.0.1 at Thu Mar 24 13:46:38 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 20)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (1.7ms)
+Rendered store/index.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 110ms (Views: 70.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:38 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:38 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/line_items?product_id=10" for 127.0.0.1 at Thu Mar 24 13:46:43 -0400 2011
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"10", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."product_id" = 10 AND ("line_items".cart_id = 20) LIMIT 1
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "updated_at", "order_id", "product_id", "created_at", "quantity") VALUES (20, '2011-03-24 17:46:43.706861', NULL, 10, '2011-03-24 17:46:43.706861', 1)[0m
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 40ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Thu Mar 24 13:46:43 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 20)
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 20)[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.html.erb (3.7ms)
+Rendered carts/_cart.html.erb (11.7ms)
+Rendered store/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 103ms (Views: 38.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:43 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:43 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/line_items?product_id=9" for 127.0.0.1 at Thu Mar 24 13:46:49 -0400 2011
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"9", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 9 ORDER BY title LIMIT 1
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."product_id" = 9 AND ("line_items".cart_id = 20) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "line_items" ("cart_id", "order_id", "product_id", "quantity", "created_at", "updated_at") VALUES (20, NULL, 9, 1, '2011-03-24 17:46:49.169337', '2011-03-24 17:46:49.169337')
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 83ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Thu Mar 24 13:46:49 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 20)[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 20)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 9 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.html.erb (53.2ms)
+Rendered carts/_cart.html.erb (57.9ms)
+Rendered store/index.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 102ms (Views: 85.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:49 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:49 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at Thu Mar 24 13:46:51 -0400 2011
+  Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 20)
+Rendered orders/_form.html.erb (5.3ms)
+Rendered orders/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 45ms (Views: 23.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:46:51 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:46:51 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Thu Mar 24 13:47:05 -0400 2011
+  Processing by OrdersController#create as HTML
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI=", "utf8"=>"✓", "order"=>{"name"=>"Lindsey", "address"=>"82493237", "pay_type"=>"Credit card", "email"=>"lindsey.eatough@gmail.com"}}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1[0m
+  [1m[35mLineItem Load (0.3ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 20)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "orders" ("created_at", "address", "name", "email", "pay_type", "updated_at") VALUES ('2011-03-24 17:47:05.841951', '82493237', 'Lindsey', 'lindsey.eatough@gmail.com', 'Credit card', '2011-03-24 17:47:05.841951')[0m
+  [1m[35mAREL (0.1ms)[0m  UPDATE "line_items" SET "cart_id" = NULL, "order_id" = 103, "updated_at" = '2011-03-24 17:47:05.843931' WHERE "line_items"."id" = 23
+  [1m[36mAREL (0.1ms)[0m  [1mUPDATE "line_items" SET "cart_id" = NULL, "order_id" = 103, "updated_at" = '2011-03-24 17:47:05.845772' WHERE "line_items"."id" = 24[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 20 LIMIT 1
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 20)[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = 20
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 9 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.text.erb (28.0ms)
+Rendered notifier/order_received.text.erb (30.2ms)
+
+Sent mail to lindsey.eatough@gmail.com (351ms)
+Date: Thu, 24 Mar 2011 13:47:06 -0400
+From: from@example.com
+To: lindsey.eatough@gmail.com
+Message-ID: <4d8b839a7eedb_aa9c819683b47174e@hnt692.wireless-pennnet.upenn.edu.mail>
+Subject: Stadium Express Order Confirmation
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Notifier#order_received
+
+Dear Lindsey
+
+Thank you for your recent order from Stadium Express.
+
+You ordered the following items: 
+
+ 1 x Le Hamburger 1 x Philly Cheesesteak 
+
+We'll send you a separate e-mail when your order is ready/Come by in 5mins.
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 1056ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Thu Mar 24 13:47:06 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "carts" ("updated_at", "created_at") VALUES ('2011-03-24 17:47:06.960763', '2011-03-24 17:47:06.960763')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 21)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.4ms)
+Rendered store/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 106ms (Views: 31.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:47:07 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:47:07 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Thu Mar 24 13:47:12 -0400 2011
+  Processing by OrdersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mOrder Load (0.9ms)[0m  [1mSELECT "orders".* FROM "orders" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "orders"
+Rendered orders/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 97ms (Views: 26.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:47:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:47:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at Thu Mar 24 13:47:15 -0400 2011
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+Rendered products/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 37ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:47:16 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:47:16 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Mar 24 13:47:18 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+Rendered users/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 29ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:47:19 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:47:19 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/logout" for 127.0.0.1 at Thu Mar 24 13:47:21 -0400 2011
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 1ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Thu Mar 24 13:47:21 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 21)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.3ms)
+Rendered store/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 101ms (Views: 30.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:47:22 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:47:22 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 24 13:47:35 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms
+
+
+Started GET "/login" for 127.0.0.1 at Thu Mar 24 13:47:35 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Thu Mar 24 13:47:35 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Thu Mar 24 13:47:35 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Mar 27 22:12:12 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 25ms
+
+
+Started GET "/login" for 127.0.0.1 at Sun Mar 27 22:12:13 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:13 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:13 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Mar 27 22:12:27 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 9ms
+
+
+Started GET "/login" for 127.0.0.1 at Sun Mar 27 22:12:27 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:27 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:27 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sun Mar 27 22:12:29 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:29 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:29 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sun Mar 27 22:12:31 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:31 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:31 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at Sun Mar 27 22:12:35 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'admin' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 14ms
+
+
+Started GET "/admin" for 127.0.0.1 at Sun Mar 27 22:12:35 -0400 2011
+  Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "orders"
+Rendered admin/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 57ms (Views: 8.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:35 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:35 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Mar 27 22:12:38 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mVenue Load (0.2ms)[0m  SELECT "venues".* FROM "venues"
+Rendered venues/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 122ms (Views: 50.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:38 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:38 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stands" for 127.0.0.1 at Sun Mar 27 22:12:44 -0400 2011
+  Processing by StandsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mStand Load (0.2ms)[0m  SELECT "stands".* FROM "stands"
+Rendered stands/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 25ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:44 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:44 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:12:45 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 21)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.5ms)
+Rendered store/index.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 171ms (Views: 88.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:45 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:45 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/line_items?product_id=10" for 127.0.0.1 at Sun Mar 27 22:12:47 -0400 2011
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"10", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."product_id" = 10 AND ("line_items".cart_id = 21) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "line_items" ("updated_at", "product_id", "quantity", "order_id", "cart_id", "created_at") VALUES ('2011-03-28 02:12:48.064833', 10, 1, NULL, 21, '2011-03-28 02:12:48.064833')[0m
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 83ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:12:48 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 21)
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 21)[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.html.erb (4.0ms)
+Rendered carts/_cart.html.erb (57.7ms)
+Rendered store/index.html.erb within layouts/application (81.8ms)
+Completed 200 OK in 103ms (Views: 86.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:12:48 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:12:48 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/line_items?product_id=10" for 127.0.0.1 at Sun Mar 27 22:13:00 -0400 2011
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"10", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."product_id" = 10 AND ("line_items".cart_id = 21) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "line_items" SET "quantity" = 2, "updated_at" = '2011-03-28 02:13:00.411089' WHERE "line_items"."id" = 25
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 32ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:13:00 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 21)[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 21)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+Rendered line_items/_line_item.html.erb (5.6ms)
+Rendered carts/_cart.html.erb (9.3ms)
+Rendered store/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 49ms (Views: 33.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:00 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:00 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/carts/21" for 127.0.0.1 at Sun Mar 27 22:13:09 -0400 2011
+  Processing by CartsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI=", "id"=>"21"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 21 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 21)[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = 25
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "carts" WHERE "carts"."id" = 21[0m
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 24ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:13:10 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES ('2011-03-28 02:13:10.102520', '2011-03-28 02:13:10.102520')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 22)
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (45.7ms)
+Rendered store/index.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 95ms (Views: 73.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:10 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:10 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/line_items?product_id=10" for 127.0.0.1 at Sun Mar 27 22:13:11 -0400 2011
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"10", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 22 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."product_id" = 10 AND ("line_items".cart_id = 22) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "line_items" ("order_id", "product_id", "cart_id", "updated_at", "created_at", "quantity") VALUES (NULL, 10, 22, '2011-03-28 02:13:11.995526', '2011-03-28 02:13:11.995526', 1)
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 40ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:13:12 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 22 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 22)[0m
+  [1m[35mLineItem Load (0.3ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 22)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+Rendered line_items/_line_item.html.erb (6.7ms)
+Rendered carts/_cart.html.erb (11.2ms)
+Rendered store/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 56ms (Views: 39.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at Sun Mar 27 22:13:13 -0400 2011
+  Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 22 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 22)[0m
+Rendered orders/_form.html.erb (5.4ms)
+Rendered orders/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 54ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:13 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:13 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Sun Mar 27 22:13:48 -0400 2011
+  Processing by OrdersController#create as HTML
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI=", "utf8"=>"✓", "order"=>{"name"=>"Lindsey", "address"=>"2343", "pay_type"=>"Credit card", "email"=>"lindsey.eatough@gmail.com"}}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 22 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 22)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "orders" ("created_at", "email", "name", "updated_at", "address", "pay_type") VALUES ('2011-03-28 02:13:49.037031', 'lindsey.eatough@gmail.com', 'Lindsey', '2011-03-28 02:13:49.037031', '2343', 'Credit card')
+  [1m[36mAREL (0.1ms)[0m  [1mUPDATE "line_items" SET "cart_id" = NULL, "order_id" = 104, "updated_at" = '2011-03-28 02:13:49.039073' WHERE "line_items"."id" = 26[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 22 LIMIT 1
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 22)[0m
+  [1m[35mAREL (0.1ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = 22
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+Rendered line_items/_line_item.text.erb (72.8ms)
+Rendered notifier/order_received.text.erb (75.0ms)
+
+Sent mail to lindsey.eatough@gmail.com (370ms)
+Date: Sun, 27 Mar 2011 22:13:49 -0400
+From: from@example.com
+To: lindsey.eatough@gmail.com
+Message-ID: <4d8feedda879f_c1ca81873dc8628dc@hnt0365.wlan.wharton.upenn.edu.mail>
+Subject: Stadium Express Order Confirmation
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Notifier#order_received
+
+Dear Lindsey
+
+Thank you for your recent order from Stadium Express.
+
+You ordered the following items: 
+
+ 1 x Le Hamburger 
+
+We'll send you a separate e-mail when your order is ready/Come by in 5mins.
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 1088ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:13:50 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES ('2011-03-28 02:13:50.098993', '2011-03-28 02:13:50.098993')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 23)
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.4ms)
+Rendered store/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 51ms (Views: 30.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:50 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:50 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Sun Mar 27 22:13:57 -0400 2011
+  Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mOrder Load (0.8ms)[0m  SELECT "orders".* FROM "orders" ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders"[0m
+Rendered orders/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 61ms (Views: 46.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:57 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:57 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at Sun Mar 27 22:13:59 -0400 2011
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+Rendered products/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 38ms (Views: 19.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:13:59 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:13:59 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Mar 27 22:14:00 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+Rendered users/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:00 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:00 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Sun Mar 27 22:14:03 -0400 2011
+  Processing by OrdersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mOrder Load (0.9ms)[0m  [1mSELECT "orders".* FROM "orders" ORDER BY created_at desc LIMIT 10 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "orders"
+Rendered orders/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 47ms (Views: 28.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:03 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:03 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at Sun Mar 27 22:14:04 -0400 2011
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+Rendered products/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 98ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:04 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:04 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at Sun Mar 27 22:14:05 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+Rendered users/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:05 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:05 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Mar 27 22:14:09 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mVenue Load (0.2ms)[0m  SELECT "venues".* FROM "venues"
+Rendered venues/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 25ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:09 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:09 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/logout" for 127.0.0.1 at Sun Mar 27 22:14:42 -0400 2011
+  Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 1ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:14:42 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 23 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 23)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.3ms)
+Rendered store/index.html.erb within layouts/application (80.2ms)
+Completed 200 OK in 103ms (Views: 84.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:42 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:42 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/line_items?product_id=10" for 127.0.0.1 at Sun Mar 27 22:14:48 -0400 2011
+  Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"10", "authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI="}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 23 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."product_id" = 10 AND ("line_items".cart_id = 23) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "line_items" ("order_id", "quantity", "created_at", "cart_id", "product_id", "updated_at") VALUES (NULL, 1, '2011-03-28 02:14:48.902953', 23, 10, '2011-03-28 02:14:48.902953')[0m
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 93ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:14:48 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 23 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 23)
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 23)[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 10 ORDER BY title LIMIT 1
+Rendered line_items/_line_item.html.erb (6.7ms)
+Rendered carts/_cart.html.erb (10.8ms)
+Rendered store/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 59ms (Views: 40.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:49 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:49 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/carts/23" for 127.0.0.1 at Sun Mar 27 22:14:53 -0400 2011
+  Processing by CartsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R1woJYkMsGCoo8iDrotBgSsNL2ju7Xn1jeRKx9aChgI=", "id"=>"23"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 23 LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE ("line_items".cart_id = 23)
+  [1m[36mAREL (0.2ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = 27[0m
+  [1m[35mAREL (0.1ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = 23
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 27ms
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:14:53 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "carts" ("updated_at", "created_at") VALUES ('2011-03-28 02:14:53.689944', '2011-03-28 02:14:53.689944')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 24)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.5ms)
+Rendered store/index.html.erb within layouts/application (75.2ms)
+Completed 200 OK in 100ms (Views: 80.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:14:53 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:14:53 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Mar 27 22:15:01 -0400 2011
+  Processing by VenuesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 36ms
+
+
+Started GET "/login" for 127.0.0.1 at Sun Mar 27 22:15:01 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:15:01 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (60.9ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:15:02 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/store/index" for 127.0.0.1 at Sun Mar 27 22:15:12 -0400 2011
+  Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 24 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "line_items" WHERE ("line_items".cart_id = 24)[0m
+Rendered collection (0.0ms)
+Rendered carts/_cart.html.erb (2.1ms)
+Rendered store/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 44ms (Views: 30.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Sun Mar 27 22:15:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at Sun Mar 27 22:15:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/logo.png"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
