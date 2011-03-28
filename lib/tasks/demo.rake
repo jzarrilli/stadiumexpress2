@@ -4,34 +4,49 @@ task :demo => :environment do
   Product.create(:title => 'Philly Cheesesteak',
     :description => 
       %{<p>
-          <em>The Philly Cheesesteak</em> The cheesesteak was developed in the early 20th century 
-          "by combining frizzled beef, onions, and cheese in a small loaf of bread," according to a 
-          1987 exhibition catalog published by the Library Company of Philadelphia and the Historical Society 
-          of Pennsylvania.
+          This is a Philly Cheesesteak.
         </p>},
     :image_url =>   '/images/phillycheesesteak.jpg',    
-    :price => 8.55)
+    :price => 7.00)
+    
   # . . .
-  Product.create(:title => 'Le Hamburger',
+  Product.create(:title => 'Hamburger',
     :description =>
       %{<p>
-          Le Royale or Le Big Mac
+          This is a Hamburger.
         </p>},
     :image_url => '/images/hamburger.jpg',
-    :price => 5.85)
+    :price => 5.00)
   # . . .
+  
+  Product.create(:title => 'Cheeseburger',
+     :description =>
+       %{<p>
+           This is a Cheeseburger.
+         </p>},
+     :image_url => '/images/hamburger.jpg',
+     :price => 6.00)
+   # . . .
 
   Product.create(:title => 'Salad',
     :description => 
       %{<p>
-          <em>Caesar's</em> the healthy option
+          This is a Salad.
         </p>},
     :image_url => '/images/salad.jpg',
-    :price => 6.05)
+    :price => 7.00)
 
   Venue.create(:name => 'Franklin Field')
   
+  Venue.create(:name => 'Phillies Stadium')
+  
+  Venue.create(:name => 'Flyers Arena')
+  
   Stand.create(:name => 'Stand 1', :location => 'Location 1')
+  
+  Stand.create(:name => 'Stand 2', :location => 'Location 2')
+   
+  Stand.create(:name => 'Stand 3', :location => 'Location 3')
   
   User.create(:name => 'Lindsey', :password => 'lindsey')
   
