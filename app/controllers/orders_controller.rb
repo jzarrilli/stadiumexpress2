@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  skip_before_filter :authorize, :only => [:new, :create]
+  skip_before_filter :authorize# , :only => [:new, :create]
   
   # GET /orders
   # GET /orders.xml
@@ -56,7 +56,7 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         Notifier.order_received(@order).deliver
-        format.html { redirect_to(store_index_url, :notice =>
+        format.html { redirect_to(@order, :notice =>
         'Thank you for your order.') }
         format.xml { render :xml => @order, :status => :created,
         :location => @order }

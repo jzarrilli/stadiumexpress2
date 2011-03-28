@@ -1,3 +1,4 @@
+Thank you for placing you order! Please see below for your order information. If your order is correct, please click "Confirm" at the bottom of this page and your order will be processed. Thank you!
 
 <p>
   <b>Name:</b>
@@ -19,6 +20,7 @@
   <%= @order.pay_type %>
 </p>
 
+<%= link_to 'Confirm', thanks_url %>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<!-- <%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %> -->

@@ -1,4 +1,6 @@
 class StandsController < ApplicationController
+  skip_before_filter :authorize,:only => [:index, :show]
+  
   # GET /stands
   # GET /stands.xml
   def index

@@ -1,4 +1,6 @@
 class VenuesController < ApplicationController
+  skip_before_filter :authorize,:only => [:index, :show]
+  
   # GET /venues
   # GET /venues.xml
   def index
