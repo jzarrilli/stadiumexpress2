@@ -1,15 +1,4 @@
-/* Global styles */
-/*@font-face {
-    font-family: 'StMarieThin';
-    /*src: url('stmarie-thin-webfont.eot');
-        src: url('stmarie-thin-webfont.eot?iefix') format('eot'),
-             url('stmarie-thin-webfont.woff') format('woff'),
-             url('stmarie-thin-webfont.ttf') format('truetype'),
-             url('stmarie-thin-webfont.svg#webfont5hcmjba2') format('svg');*/
-    /*font-weight: normal;
-        font-style: normal;
-
-    }*/
+ Global styles */
 
 
 #store .entry form, #store .entry form div {
@@ -27,128 +16,10 @@
 
 
 #store h1 {
-/* 		font-family: 'StMarieThin';*/
-		font-size: 50px;
+        font:  150% sans-serif;
         color: #226;
-        border-bottom: 8px dotted #77d;
+        border-bottom: 3px dotted #77d;
 }
-
-#store h2{
-	font-size: 40px;
-}
-
-
-/* START:mainlayout */
-/* Styles for main page */
-
-#banner {
-/* font-family: 'StMarieThin';*/
- background: Steelblue;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid;
-  color: Midnightblue;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 300% bold;
-}
-
-#banner img {
-  float: left;
-}
-
-#columns {
-  background: Midnightblue;
-}
-
-#main {
-  margin-left: 30em; /*column width*/
-  padding-top: 4ex;
-  padding-left: 2em;
-  background: Gainsboro;
-}
-
-#side {
-  float: left;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-bottom: 1em;
-  width: 16em;
-  background: Midnightblue;
-}
-
-#side a {
-  color: Powderblue;
-  font-size: 24px;
-}
-
-#columns.cust{
-	color: red;
-  font-size: 24px;
-}
-
-/* END:mainlayout */
-
-/* Styles for the cart in the main page */
-#store .cart_title {
-/*font-family: 'StMarieThin';*/
-font-weight: 300% bold;
-font-size: 50px;
-}
-#store .item_price, #store .total_line {
-text-align: right;
-}
-#store .total_line .total_cell {
-font-weight: bold;
-border-top: 1px solid #595;
-}
-
-/* Styles for the cart in the sidebar */
-#cart, #cart table {
-font-size: 30px;
-color: white;
-}
-#cart table {
-border-top: 3px dotted Powderblue;
-border-bottom: 3px dotted Powderblue;
-margin-bottom: 10px;
-}
-
-/* START:form */
-/* Styles for order form */
-
-.depot_form fieldset {
-  background: Azure;
-}
-
-.depot_form legend {
-  color: Azure;
-  background: Midnightblue;
-  font-family: sans-serif;
-  padding: 0.2em 1em;
-}
-
-.depot_form label {
-  width: 5em;
-  float: left;
-  text-align: right;
-  padding-top: 0.2em;
-  margin-right: 0.1em;
-  display: block;
-}
-
-.depot_form select, .depot_form textarea, .depot_form input {
-  margin-left: 0.5em;
-}
-
-.depot_form .submit {
-  margin-left: 4em;
-}
-
-.depot_form div {
-  margin: 0.5em 0;
-}
-/* END:form */
 
 /* Styles for products/index */
 
@@ -198,3 +69,104 @@ margin-bottom: 10px;
   background:   Seashell;
 }
 
+/* START:mainlayout */
+/* Styles for main page */
+
+#banner {
+  background: Steelblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: Midnightblue;
+  text-align: center;
+}
+
+#banner img {
+  float: left;
+}
+
+#columns {
+  background: Midnightblue;
+}
+
+#main {
+  margin-left: 17em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: Gainsboro;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 16em;
+  background: Midnightblue;
+}
+
+#side a {
+  color: Powderblue;
+  font-size: small;
+}
+/* END:mainlayout */
+
+/* Styles for the cart in the main page */
+#store .cart_title {
+font: 120% bold;
+}
+#store .item_price, #store .total_line {
+text-align: right;
+}
+#store .total_line .total_cell {
+font-weight: bold;
+border-top: 1px solid #595;
+}
+
+/* Styles for the cart in the sidebar */
+#cart, #cart table {
+font-size: smaller;
+color: white;
+}
+#cart table {
+border-top: 1px dotted Powderblue;
+border-bottom: 1px dotted Powderblue;
+margin-bottom: 10px;
+}
+
+/* START:form */
+/* Styles for order form */
+
+.depot_form fieldset {
+  background: Azure;
+}
+
+.depot_form legend {
+  color: Azure;
+  background: Midnightblue;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+
+.depot_form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.depot_form select, .depot_form textarea, .depot_form input {
+  margin-left: 0.5em;
+}
+
+.depot_form .submit {
+  margin-left: 4em;
+}
+
+.depot_form div {
+  margin: 0.5em 0;
+}
+/* END:form 
