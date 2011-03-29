@@ -1,10 +1,21 @@
 body { background-color: #fff; color: #333; }
 
-body, p, ol, ul, td {
+
+
+body, ol, ul{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
 }
+
+body, h3, td{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: normal;
+  font-size:   20px;
+  line-height: 25px;	
+}
+
+
 
 pre {
   background-color: #eee;
@@ -21,7 +32,7 @@ div.field, div.actions {
 }
 
 #notice {
-  color: green;
+  color: blue;
 }
 
 .field_with_errors {
