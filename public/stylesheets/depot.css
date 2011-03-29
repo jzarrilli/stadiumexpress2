@@ -1,4 +1,23 @@
- Global styles */
+/* Global styles */
+*@font-face {
+    font-family: 'StMarieThin';
+    src: url('stmarie-thin-webfont.eot');
+    src: url('stmarie-thin-webfont.eot?iefix') format('eot'),
+         url('stmarie-thin-webfont.woff') format('woff'),
+         url('stmarie-thin-webfont.ttf') format('truetype'),
+         url('stmarie-thin-webfont.svg#webfont5hcmjba2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+/*common colors
+dotted purple border #77d
+light purple #CCCCFF
+light green #CCFFCC
+light blue Azure
+dark grey #383838
+medium grey #686868
+*/
 
 
 #store .entry form, #store .entry form div {
@@ -16,70 +35,37 @@
 
 
 #store h1 {
-        font:  150% sans-serif;
-        color: #226;
-        border-bottom: 3px dotted #77d;
+    font-family: 'StMarieThin';
+		font-size: 65px;
+        color: #383838;
+        border-bottom: 8px dotted #77d;
+		line-height: 1.5em;
 }
 
-/* Styles for products/index */
-
-#product_list table {
-        border-collapse: collapse;
+#store h2{
+	font-size: 40px;
 }
 
-#product_list table tr td {
-        padding: 5px;
-        vertical-align: top;
+/*venue and stand double space*/
+#store, #main table tr td{
+	line-height: 2em;
 }
 
-#product_list .list_image {
-  width:        60px;
-  height:       70px;
-}
-
-#product_list .list_description {
-  width:        60%;
-}
-
-#product_list .list_description dl {
-        margin: 0;
-}
-
-#product_list .list_description dt {
-	color:        #244;
-	font-weight:  bold;
-	font-size:    larger;
-}
-
-#product_list .list_description dd {
-        margin: 0;
-}
-
-#product_list .list_actions {
-  font-size:    x-small;
-  text-align:   right;
-  padding-left: 1em;
-}
-
-#product_list .list_line_even {
-  background:   #e0f8f8;
-}
-
-#product_list .list_line_odd {
-  background:   Seashell;
-}
 
 /* START:mainlayout */
 /* Styles for main page */
 
 #banner {
-  background: Steelblue;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid;
-  font: small-caps 40px/40px "Times New Roman", serif;
-  color: Midnightblue;
-  text-align: center;
+	/*font-family: 'StMarieThin';*/
+  background: #686868;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 6em; /*not centered but leaves room for logo*/
+  border-bottom: 10px solid #CCFFCC;
+  color: #CCCCFF;
+  text-align: left;
+  font-size: 74px;
+  font-weight: 500% bold;
 }
 
 #banner img {
@@ -87,34 +73,84 @@
 }
 
 #columns {
-  background: Midnightblue;
+  background: #383838;
+
 }
 
 #main {
-  margin-left: 17em;
+  margin-left: 11em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
   padding-top: 4ex;
   padding-left: 2em;
   background: Gainsboro;
 }
+
+#main2 {
+  margin-left: 12.5em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 12.5em for 4em good*/
+  padding-top: 4ex;
+  padding-left: 4em;
+  background: Gainsboro;
+  font-size: 20px;
+  width: 1000px;
+  line-height: 1.25em;
+}
+
+#main2 h1{
+	font-size: 40px;
+}
+
+#main2 table tr{
+	font-size: 25px;
+	text-align: left;
+}
+
+#main2 table td{
+	font-size: 20px;
+	text-align: left;
+}
+
 
 #side {
   float: left;
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 16em;
-  background: Midnightblue;
+  width: 6em; /*small box width, 6em for 40px is min to get vendor login to one page*/
+  background: #383838;
+  line-height: 1em;
+}
+#side2 {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 4em; /*small box width, 4em for 20px is min to get vendor login to one page*/
+  background: #383838;
+  line-height: 1em;
 }
 
+/*side font*/
 #side a {
-  color: Powderblue;
-  font-size: small;
+  color: Azure;
+  font-size: 40px;
+  line-height: 1em;
 }
+#side2 a {
+  color: Azure;
+  font-size: 15px;
+  line-height: 1em;
+}
+
+#columns.cust{
+	color: red;
+  font-size: 24px;
+}
+
 /* END:mainlayout */
 
 /* Styles for the cart in the main page */
 #store .cart_title {
-font: 120% bold;
+font-weight: 300% bold;
+font-size: 50px;
 }
 #store .item_price, #store .total_line {
 text-align: right;
@@ -125,13 +161,28 @@ border-top: 1px solid #595;
 }
 
 /* Styles for the cart in the sidebar */
-#cart, #cart table {
-font-size: smaller;
+#cart, #cart table td{
+font-size: 40px;
 color: white;
 }
+#cart .total_line td{
+  font-size: 40px;
+  font-style: italic;
+}
+#cart .total_cell{
+  font-size: 40px;
+  color: #CCFFCC;
+  font-style: italic;
+}
+
+#cart .cart_title{
+	font-weight: bold;
+	color: #CCCCFF;
+}
+
 #cart table {
-border-top: 1px dotted Powderblue;
-border-bottom: 1px dotted Powderblue;
+border-top: 3px dotted #77d;
+border-bottom: 3px dotted #77d;
 margin-bottom: 10px;
 }
 
@@ -140,11 +191,14 @@ margin-bottom: 10px;
 
 .depot_form fieldset {
   background: Azure;
+  border: 4px solid #77d;
+  
 }
 
 .depot_form legend {
-  color: Azure;
-  background: Midnightblue;
+  color: #CCFFCC;
+  background: #383838;
+  border: 4px solid #CCCCFF;
   font-family: sans-serif;
   padding: 0.2em 1em;
 }
@@ -169,4 +223,62 @@ margin-bottom: 10px;
 .depot_form div {
   margin: 0.5em 0;
 }
-/* END:form 
+/* END:form */
+
+
+/*VENDOR FORMATTING
+
+/* Styles for orders/index */
+#order
+
+/* Styles for products/index */
+#product_list table {
+        border-collapse: collapse;
+}
+
+#product_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+		line-height: 1.25em;
+}
+
+#product_list .list_image {
+  width:        60px;
+  height:       70px;
+  padding-left: 4.5em;
+}
+
+#product_list .list_description {
+  width:        60%;
+}
+
+#product_list .list_description dl {
+        margin: 0;
+}
+
+#product_list .list_description dt {
+	color:        #244;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#product_list .list_description dd {
+        margin: 0;
+}
+
+#product_list .list_actions {
+  font-size:    small;
+  text-align:   right;
+  padding-left: 1em;
+  padding-top: 1.25em;
+}
+
+#product_list .list_line_even {
+  background:   #e0f8f8;
+}
+
+#product_list .list_line_odd {
+  background:   Seashell;
+}
+
+

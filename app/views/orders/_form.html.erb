@@ -13,22 +13,22 @@
 
 
 <div>
-  <%= f.label :name, "Name:" %>
+  <%= f.label :name, "Name:" %> <br />
   <%= f.text_field :name, :size => 40%>
   </div>
   
   <div>
-    <%= f.label :address, "Seat Location:" %>
+    <%= f.label :address, "Seat Number:" %> <br />
     <%= f.text_area :address, :rows => 3, :cols =>40 %>
   </div>
   
   <div>
-    <%= f.label :email, "E-Mail:" %>
+    <%= f.label :email, "E-Mail:" %> <br />
     <%= f.email_field :email, :size => 40 %>
   </div>
   
   <div>
-    <%= f.label :pay_type, "Pay with:" %>
+    <%= f.label :pay_type, "Pay with:" %> <br />
     <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %>
   </div>
   

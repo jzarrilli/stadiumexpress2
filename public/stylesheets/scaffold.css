@@ -1,10 +1,29 @@
 body { background-color: #fff; color: #333; }
 
-body, p, ol, ul, td {
+
+
+body, ol, ul{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
-  line-height: 18px;
+  line-height: 1.5em;
 }
+
+body, td{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: normal;
+  font-size:   50px;
+  line-height: 1em;	
+  width: 45em; /*body width of 45 fits Phillies Stadium onto one line*/
+}
+
+/*side font
+h3{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: normal;
+  font-size:   30px;
+  line-height: 2em;	
+}*/
+
 
 pre {
   background-color: #eee;
@@ -21,7 +40,7 @@ div.field, div.actions {
 }
 
 #notice {
-  color: green;
+  color: blue;
 }
 
 .field_with_errors {

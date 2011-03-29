@@ -1,8 +1,7 @@
-<h1>Listing venues</h1>
+<h1>Select your stadium!</h1>
 
 <table>
   <tr>
-    <th>Name</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,7 +12,8 @@
     <td><%= link_to venue.name, stands_path %></td>
     <td><%= link_to 'Show', venue %></td>
     <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
-    <td><%= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => 
+		:delete %></td>
   </tr>
 <% end %>
 </table>
