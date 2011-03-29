@@ -19,7 +19,6 @@ dark grey #383838
 medium grey #686868
 */
 
-
 #store .entry form, #store .entry form div {
 	display: inline;
 }
@@ -35,7 +34,7 @@ medium grey #686868
 
 
 #store h1 {
-    font-family: 'StMarieThin';
+    	font: Tahoma, sans-serif;
 		font-size: 65px;
         color: #383838;
         border-bottom: 8px dotted #77d;
@@ -56,16 +55,18 @@ medium grey #686868
 /* Styles for main page */
 
 #banner {
-	/*font-family: 'StMarieThin';*/
+	font: Tahoma, sans-serif;
   background: #686868;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 6em; /*not centered but leaves room for logo*/
+  padding-left: 4em; /*not centered but leaves room for logo*/
   border-bottom: 10px solid #CCFFCC;
   color: #CCCCFF;
   text-align: left;
   font-size: 74px;
   font-weight: 500% bold;
+  width: 1000px;
+
 }
 
 #banner img {
@@ -74,24 +75,29 @@ medium grey #686868
 
 #columns {
   background: #383838;
+  width: 1000px;
 
 }
 
 #main {
   margin-left: 11em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
   padding-top: 4ex;
-  padding-left: 2em;
+  padding-left: 1.25em;
   background: Gainsboro;
+  width: 800px;
+  
 }
 
 #main2 {
   margin-left: 12.5em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 12.5em for 4em good*/
   padding-top: 4ex;
   padding-left: 4em;
+  padding-bottom: 10em;
   background: Gainsboro;
   font-size: 20px;
   width: 1000px;
   line-height: 1.25em;
+  
 }
 
 #main2 h1{
@@ -111,19 +117,22 @@ medium grey #686868
 
 #side {
   float: left;
+  width: 6em; /*small box width, 6em for 40px is min to get vendor login to one page*/
+  position: absolute;
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 6em; /*small box width, 6em for 40px is min to get vendor login to one page*/
+  padding-right: 0em;
   background: #383838;
   line-height: 1em;
 }
 #side2 {
   float: left;
+  position: absolute;
+  width: 4em; /*small box width, 4em for 20px is min to get vendor login to one page*/
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 4em; /*small box width, 4em for 20px is min to get vendor login to one page*/
   background: #383838;
   line-height: 1em;
 }

@@ -1,4 +1,4 @@
-<h1>Select your stadium!</h1>
+<h1>Select Stadium</h1>
 
 <table>
   <tr>
@@ -10,10 +10,10 @@
 <% @venues.each do |venue| %>
   <tr>
     <td><%= link_to venue.name, stands_path %></td>
-    <td><%= link_to 'Show', venue %></td>
+    <!--<td><%= link_to 'Show', venue %></td>
     <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
     <td><%= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => 
-		:delete %></td>
+		:delete %></td>-->
   </tr>
 <% end %>
 </table>
