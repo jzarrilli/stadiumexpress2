@@ -1,0 +1,2 @@
+module NoWwwHelper
+end

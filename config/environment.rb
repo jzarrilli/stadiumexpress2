@@ -4,6 +4,12 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 Depot::Application.initialize!
 
+Rails::Initializer.run do |config|
+
+  config.middleware.use “NoWWW” if RAILS_ENV == ‘production’
+
+end
+
 Depot::Application.configure do config.action_mailer.delivery_method = :smtp
   
   config.action_mailer.smtp_settings = {
