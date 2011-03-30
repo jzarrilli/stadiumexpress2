@@ -64,8 +64,7 @@ medium grey #686868
   color: #CCCCFF;
   text-align: left;
   font-size: 74px;
-  font-weight: 500% bold;
-  width: 1000px;
+  width: 75%;
 
 }
 
@@ -75,7 +74,7 @@ medium grey #686868
 
 #columns {
   background: #383838;
-  width: 1000px;
+  width: 70%;
 
 }
 
@@ -84,7 +83,7 @@ medium grey #686868
   padding-top: 4ex;
   padding-left: 1.25em;
   background: Gainsboro;
-  width: 800px;
+  width: 70%;
   
 }
 
@@ -95,7 +94,7 @@ medium grey #686868
   padding-bottom: 10em;
   background: Gainsboro;
   font-size: 20px;
-  width: 1000px;
+  width: 70%;
   line-height: 1.25em;
   
 }
@@ -157,6 +156,10 @@ medium grey #686868
 /* END:mainlayout */
 
 /* Styles for the cart in the main page */
+#store body{
+	width: 80%;
+}
+
 #store .cart_title {
 font-weight: 300% bold;
 font-size: 50px;

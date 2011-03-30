@@ -13,7 +13,7 @@ body, td{
   font-weight: normal;
   font-size:   50px;
   line-height: 1em;	
-  width: 45em; /*body width of 45 fits Phillies Stadium onto one line*/
+  width: 100%; /*body width of 45 fits Phillies Stadium onto one line*/
 }
 
 /*side font
@@ -50,7 +50,7 @@ div.field, div.actions {
 }
 
 #error_explanation {
-  width: 450px;
+  width: 80%;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
