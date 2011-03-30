@@ -58,18 +58,18 @@ medium grey #686868
 	font: Tahoma, sans-serif;
   background: #686868;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   padding-left: 0em; /*not centered but leaves room for logo*/
   border-bottom: 10px solid #CCFFCC;
   color: Powderblue;
-  text-align: left;
+  text-align: center;
   font-size: 74px;
   width: 100%;
 
 }
 
 #banner img {
-  float: left;
+  float: center;
 }
 
 #columns {
