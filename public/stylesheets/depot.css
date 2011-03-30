@@ -11,10 +11,10 @@
 
 }*/
 /*common colors
-dotted purple border #77d
-light purple #CCCCFF
+dotted purple border Midnightblue
+light purple Powderblue
 light green #CCFFCC
-light blue Azure
+light blue Powderblue
 dark grey #383838
 medium grey #686868
 */
@@ -37,7 +37,7 @@ medium grey #686868
     	font: Tahoma, sans-serif;
 		font-size: 65px;
         color: #383838;
-        border-bottom: 8px dotted #77d;
+        border-bottom: 8px dotted Midnightblue;
 		line-height: 1.5em;
 }
 
@@ -59,12 +59,12 @@ medium grey #686868
   background: #686868;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 4em; /*not centered but leaves room for logo*/
+  padding-left: 0em; /*not centered but leaves room for logo*/
   border-bottom: 10px solid #CCFFCC;
-  color: #CCCCFF;
+  color: Powderblue;
   text-align: left;
   font-size: 74px;
-  width: 75%;
+  width: 100%;
 
 }
 
@@ -138,12 +138,12 @@ medium grey #686868
 
 /*side font*/
 #side a {
-  color: Azure;
+  color: Powderblue;
   font-size: 40px;
   line-height: 1em;
 }
 #side2 a {
-  color: Azure;
+  color: Powderblue;
   font-size: 15px;
   line-height: 1em;
 }
@@ -189,12 +189,12 @@ color: white;
 
 #cart .cart_title{
 	font-weight: bold;
-	color: #CCCCFF;
+	color: Powderblue;
 }
 
 #cart table {
-border-top: 3px dotted #77d;
-border-bottom: 3px dotted #77d;
+border-top: 3px dotted Midnightblue;
+border-bottom: 3px dotted Midnightblue;
 margin-bottom: 10px;
 }
 
@@ -202,15 +202,15 @@ margin-bottom: 10px;
 /* Styles for order form */
 
 .depot_form fieldset {
-  background: Azure;
-  border: 4px solid #77d;
+  background: Powderblue;
+  border: 4px solid Midnightblue;
   
 }
 
 .depot_form legend {
   color: #CCFFCC;
   background: #383838;
-  border: 4px solid #CCCCFF;
+  border: 4px solid Powderblue;
   font-family: sans-serif;
   padding: 0.2em 1em;
 }
