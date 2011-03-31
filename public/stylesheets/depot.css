@@ -53,9 +53,13 @@ medium grey #686868
 
 #main table tr td{
 	line-height: 1.5em;
-	width: 80%;
 }
 
+#main .total_line{
+	line-height: 1.5em;
+	width: 20%;
+	font-weight: bold;
+}
 
 /* START:mainlayout */
 /* Styles for main page */

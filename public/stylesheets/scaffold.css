@@ -10,10 +10,10 @@ body, ol, ul{
 
 body, td{
   font-family: verdana, arial, helvetica, sans-serif;
-  font-weight: normal;
   font-size:   50px;
   line-height: 1em;	
   width: 100%; /*body width of 45 fits Phillies Stadium onto one line*/
+  text-align: left;
 }
 
 /*side font
