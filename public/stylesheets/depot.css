@@ -357,10 +357,12 @@ margin-bottom: 10px;
 }
 
 .stand_lines a { color: #383838; 
+	padding: .2em;
 	margin-bottom: 3em;
 	background-color:Azure; 
 	border: 2px solid #0099CC;
 	padding:.2em;
+	line-height:2em;
 	 }
 	
 .stand_lines a:hover { color: Azure; 
@@ -368,3 +370,8 @@ margin-bottom: 10px;
 		border: 2px solid #0099CC;
 		padding:.2em;
 		}
+		
+.cart_items{
+	background:#CCFFCC;
+	border: 3px solid #58A171;
+}

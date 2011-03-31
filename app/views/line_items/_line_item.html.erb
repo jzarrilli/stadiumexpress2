@@ -5,11 +5,16 @@
 	<% else %>
 	<tr class="subj">
 		<% end %>
-		<td>Item</td><td>Quantity</td><td>Price</td>
-		</tr><tr>
-			<td><%= line_item.product.title %></td>
-	
-	<td><%= line_item.quantity %></td>
-	<td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
+		<td>Item</td>
+		<td>Quantity</td>
+		<td> &nbsp</td></td><td>Price</td>
+	</tr>
+	<tr>
+		<td><%= line_item.product.title %></td>
+		<td><%= line_item.quantity %></td>
+		<td>
+		<td class="item_price">
+			<%= number_to_currency(line_item.total_price) %>
+		</td>
 	</tr>
 </table>
