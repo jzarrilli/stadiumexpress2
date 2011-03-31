@@ -1,7 +1,7 @@
-<h2>Your Cart</h2>
+<h1>Your Cart</h1>
 
 	
-<table>
+<table width="5%">
 	<%= render(@cart.line_items) %>
 	
 	<tr class="total_line">
@@ -13,9 +13,14 @@
 	
 </table>
 
-<%= button_to 'Empty cart', @cart, :method => :delete,
-:confirm => 'Are you sure you wish to empty cart?' %>
+<table width="5%">
+	<tr class"buttons">
+		<td><%= button_to 'Empty cart', @cart, :method => :delete,
+:confirm => 'Are you sure you wish to empty cart?' %></td>
 
-<%= button_to 'Order More', store_index_url, :method => :get %>
+		<td><%= button_to 'Order More', store_index_url, :method => :get %></td>
 
-<%= button_to 'Proceed to Checkout', new_order_url, :method => :get %>
+		<td><%= button_to 'Proceed to Checkout', new_order_url, :method => :get %></td>
+	</tr>
+</table>
+
