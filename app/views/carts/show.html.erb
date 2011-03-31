@@ -4,9 +4,6 @@
 	<li><%= item.quantity %> &times; <%= item.product.title %></li>
 	<% end %>
 </ul>
-
-<%= button_to 'Empty cart', @cart, :method => :delete,
-	:confirm => 'Are you sure you wish to empty cart?' %>
 	
 <div class="cart_title">Your Cart</div>
 <table>
@@ -21,3 +18,7 @@
 
 <%= button_to 'Empty cart', @cart, :method => :delete,
 :confirm => 'Are you sure you wish to empty cart?' %>
+
+<%= button_to 'Order More', store_index_url, :method => :get %>
+
+<%= button_to 'Proceed to Checkout', new_order_url, :method => :get %>
