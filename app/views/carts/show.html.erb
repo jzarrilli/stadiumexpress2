@@ -1,11 +1,6 @@
 <h2>Your Cart</h2>
-<ul>
-	<% for item in @cart.line_items %>
-	<li><%= item.quantity %> &times; <%= item.product.title %></li>
-	<% end %>
-</ul>
+
 	
-<div class="cart_title">Your Cart</div>
 <table>
 	<%= render(@cart.line_items) %>
 	

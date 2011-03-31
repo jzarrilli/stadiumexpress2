@@ -109,7 +109,7 @@ medium grey #686868
 }
 
 #main2 table td{
-	font-size: 20px;
+	font-size: 40px;
 	text-align: left;
 }
 
@@ -202,7 +202,7 @@ margin-bottom: 10px;
 /* Styles for order form */
 
 .depot_form fieldset {
-  background: Powderblue;
+  background: Azure;
   border: 4px solid Midnightblue;
   
 }
@@ -280,7 +280,7 @@ margin-bottom: 10px;
 
 #product_list .list_actions {
   font-size:    small;
-  text-align:   right;
+  text-align:   left;
   padding-left: 1em;
   padding-top: 1.25em;
 }
