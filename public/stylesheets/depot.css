@@ -72,6 +72,14 @@ medium grey #686868
   float: center;
 }
 
+#footer{
+	vertical-align: bottom;
+	font-size:24px;
+	line-height: 2em;
+	text-align:center;
+	width: 100%;
+}
+
 #columns {
   background: #383838;
   width: 70%;
@@ -79,16 +87,17 @@ medium grey #686868
 }
 
 #main {
-  margin-left: 11em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
-  padding-top: 4ex;
-  padding-left: 1.25em;
+  padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
+  padding-top: 1.25em;
+  padding-bottom:5em;
   background: Gainsboro;
-  width: 70%;
+  width: 1219px;
   
 }
 
 #main2 {
   margin-left: 12.5em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 12.5em for 4em good*/
+  margin-top: 0em;
   padding-top: 4ex;
   padding-left: 4em;
   padding-bottom: 10em;
@@ -116,10 +125,10 @@ medium grey #686868
 
 #side {
   float: left;
-  width: 6em; /*small box width, 6em for 40px is min to get vendor login to one page*/
+  width: 0em; /*small box width, 6em for 40px is min to get vendor login to one page*/
   position: absolute;
   padding-top: 1em;
-  padding-left: 1em;
+  padding-left: 0em;
   padding-bottom: 1em;
   padding-right: 0em;
   background: #383838;

@@ -16,7 +16,7 @@
 			<% if !session[:user_id] %>		
 		
 				<div id="side"> 
-					<div id="cart">
+				<!--	<div id="cart">
 						<% if @cart %>
 						<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
 							<%= render @cart %>
@@ -27,7 +27,7 @@
 					<%= link_to "Home", root_path%> <br/>
 					<br/>
 					<%= link_to "Vendor Login", login_path%> <br/>
-				</div> 
+				</div> -->
 			
 				<div id="main">
 					<%= yield %>
@@ -51,7 +51,10 @@
 				</div> 	
 			<% end %>		
 	</div>
-		
+	<div id="footer">
+		<%= link_to "Vendor Login", login_path%> <br/>
+	</div> 
+	
 </body> 
 </html>
 			
