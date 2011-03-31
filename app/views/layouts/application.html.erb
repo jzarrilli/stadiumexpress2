@@ -15,19 +15,6 @@
 		
 			<% if !session[:user_id] %>		
 		
-				<div id="side"> 
-				<!--	<div id="cart">
-						<% if @cart %>
-						<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
-							<%= render @cart %>
-							<% end %>
-						<% end %>
-					</div>
-
-					<%= link_to "Home", root_path%> <br/>
-					<br/>
-					<%= link_to "Vendor Login", login_path%> <br/>
-				</div> -->
 			
 				<div id="main">
 					<%= yield %>
