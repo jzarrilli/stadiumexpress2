@@ -1,10 +1,11 @@
-<table class="cart_items">
+<table class="cart_items" width="20%">
+	
 	<% if line_item == @current_item %>
 	<tr id="current_item">
 	<% else %>
-	<tr>
+	<tr class="subj">
 		<% end %>
-		<td class="subj">Item</td><td class="subj">Quantity</td><td class="subj">Price</td>
+		<td>Item</td><td>Quantity</td><td>Price</td>
 		</tr><tr>
 			<td><%= line_item.product.title %></td>
 	

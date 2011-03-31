@@ -1,13 +1,13 @@
 <h1>Your Cart</h1>
-
 	
-<table width="5%">
+<table width="20%">
 	<%= render(@cart.line_items) %>
 	
-	<tr class="total_line">
-		<td colspan="2">Total</td>
+	<tr class="total_line"><font color="Midnightblue" face="Arial Black">
+		</br>
+		<IT><BD><td colspan="2">Total</td></IT></BD>
 		<td class="total_cell">
-			<%= number_to_currency(@cart.total_price) %>
+			<IT><BD><%= number_to_currency(@cart.total_price) %></BD></IT></font>
 		</td>
 	</tr>
 	

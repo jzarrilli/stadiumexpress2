@@ -6,7 +6,7 @@
 	<h3><%= product.title %></h3>
 	<%= image_tag(product.image_url) %> 
 	<IT><%=sanitize product.description %></IT>
-	<div class="price_line">
+	<div id="price_line">
 		<span class="price">
 			<%= number_to_currency(product.price) %>
 		</span> 
