@@ -34,9 +34,10 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
+.stand_lines a { color: #686868;background-color:#CCFFCC; }
 a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a:hover { color: Azure; }
+
 
 div.field, div.actions {
   margin-bottom: 10px;

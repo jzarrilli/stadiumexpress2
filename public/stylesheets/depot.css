@@ -105,7 +105,7 @@ dusty green 58A171
   padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
   padding-top: .02em;
   padding-bottom:5em;
-  background: Gainsboro;
+  background: white;
   width: 1175px;
   
 }
@@ -349,3 +349,22 @@ margin-bottom: 10px;
 	border: 4px dotted Midnightblue;
 	line-height:1.2em;
 }
+
+.location{
+	padding: .1em;
+	background: #CCFFCC;
+	border:2px solid #58A171;
+}
+
+.stand_lines a { color: #383838; 
+	margin-bottom: 3em;
+	background-color:Azure; 
+	border: 2px solid #0099CC;
+	padding:.2em;
+	 }
+	
+.stand_lines a:hover { color: Azure; 
+		background-color:#383838; 
+		border: 2px solid #0099CC;
+		padding:.2em;
+		}
