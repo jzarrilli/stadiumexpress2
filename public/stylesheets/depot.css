@@ -266,6 +266,8 @@ margin-bottom: 10px;
 }
 
 .depot_form select, .depot_form textarea, .depot_form input {
+  padding-top: .5em;
+  padding bottom: .5em;
   margin-left: 0.2em;
 }
 
@@ -341,4 +343,6 @@ margin-bottom: 10px;
   background:   Seashell;
 }
 
-
+.thanks{
+	padding-top: 2em;
+}

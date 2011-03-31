@@ -13,7 +13,7 @@ body, ol, ul{
   line-height: 1.5em;
 }
 
-body, td{
+body, td,li{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   50px;
   line-height: 1em;	
@@ -48,7 +48,8 @@ div.field, div.actions {
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: #FFE0E3;
+  border: 2px solid red;
   display: table;
 }
 
@@ -58,7 +59,7 @@ div.field, div.actions {
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #EBEBEB;
 }
 
 #error_explanation h2 {
@@ -68,8 +69,8 @@ div.field, div.actions {
   font-size: 12px;
   margin: -7px;
   margin-bottom: 0px;
-  background-color: #c00;
-  color: #fff;
+  background-color: #FFE0E3;
+  color: #686868;
 }
 
 #error_explanation ul li {
