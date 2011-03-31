@@ -82,23 +82,23 @@ medium grey #686868
 
 #columns {
   background: #383838;
-  width: 70%;
+  width: 100%;
 
 }
 
 #main {
   padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
-  padding-top: 1.25em;
+  padding-top: .5em;
   padding-bottom:5em;
   background: Gainsboro;
-  width: 1219px;
+  width: 1175px;
   
 }
 
 #main2 {
   margin-left: 12.5em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 12.5em for 4em good*/
   margin-top: 0em;
-  padding-top: 4ex;
+  padding-top: 1em;
   padding-left: 4em;
   padding-bottom: 10em;
   background: Gainsboro;
