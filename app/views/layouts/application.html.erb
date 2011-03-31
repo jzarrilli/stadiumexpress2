@@ -15,6 +15,9 @@
 		
 			<% if !session[:user_id] %>		
 		
+				<div id="stripe">
+					<%= link_to "Vendor Login", login_path%> <br/>
+				</div>
 			
 				<div id="main">
 					<%= yield %>
@@ -38,9 +41,7 @@
 				</div> 	
 			<% end %>		
 	</div>
-	<div id="footer">
-		<%= link_to "Vendor Login", login_path%> <br/>
-	</div> 
+
 	
 </body> 
 </html>
