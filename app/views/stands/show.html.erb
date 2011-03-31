@@ -1,15 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
+<table>
+	<tr>
+		<td><%= @stand.name %> </td><td>A</td>
+
+		<td><%= @stand.location %></td>
+	</tr>
+</table>
+
+<!--<p>
   <%= @stand.name %>
 </p>
 
 <p>
   <b>Location:</b>
   <%= @stand.location %>
-</p>
+</p>-->
 
-
-<%= link_to 'Edit', edit_stand_path(@stand) %> |
-<%= link_to 'Back', stands_path %>

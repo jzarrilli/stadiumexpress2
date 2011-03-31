@@ -1,10 +1,14 @@
+<table class="cart_items">
 	<% if line_item == @current_item %>
 	<tr id="current_item">
 	<% else %>
 	<tr>
 		<% end %>
-		
-	<td><%= line_item.quantity %>&times;</td>
-	<td><%= line_item.product.title %></td>
+		<td class="subj">Item</td><td class="subj">Quantity</td><td class="subj">Price</td>
+		</tr><tr>
+			<td><%= line_item.product.title %></td>
+	
+	<td><%= line_item.quantity %></td>
 	<td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
-</tr>
+	</tr>
+</table>

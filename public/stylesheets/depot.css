@@ -17,6 +17,7 @@ light green #CCFFCC
 light blue Powderblue
 dark grey #383838
 medium grey #686868
+dusty blue 0099CC
 */
 
 #store .entry form, #store .entry form div {
@@ -48,7 +49,6 @@ medium grey #686868
 /*venue and stand double space*/
 #store table tr td{
 	line-height: 1.5em;
-	width: 100%;
 }
 
 #main table tr td{
@@ -84,9 +84,10 @@ medium grey #686868
 
 #stripe{
 	background: #383838;
+	color: white;
 	vertical-align: top;
 	padding-top:0px;
-	border-bottom:.2em solid Azure;
+	border-bottom:.2em solid #0099CC;
 	font-size:24px;
 	line-height: 2em;
 	text-align:center;
@@ -101,7 +102,7 @@ medium grey #686868
 
 #main {
   padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
-  padding-top: .5em;
+  padding-top: .02em;
   padding-bottom:5em;
   background: Gainsboro;
   width: 1175px;
@@ -185,7 +186,6 @@ text-align: right;
 font-weight: bold;
 border-top: 1px solid #595;
 }
-
 
 
 /* Styles for the cart in the sidebar */
