@@ -18,6 +18,7 @@ light blue Powderblue
 dark grey #383838
 medium grey #686868
 dusty blue 0099CC
+dusty green 58A171
 */
 
 #store .entry form, #store .entry form div {
@@ -343,6 +344,8 @@ margin-bottom: 10px;
   background:   Seashell;
 }
 
-.thanks{
-	padding-top: 2em;
+.confirmation{
+	background: Azure;
+	border: 4px dotted Midnightblue;
+	line-height:1.2em;
 }

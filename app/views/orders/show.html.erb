@@ -1,36 +1,15 @@
-<h1>Thanks for your order!</h1>
-
-See order details below. <br /><br />
-If correct, please click "Confirm" <br />
-at the bottom of this page. <br />
-<br />
-Enjoy! <br />
-
-<table>
-	<tr><td>Name</td><td><%= @order.name %></td></tr>
+<h1>Please confirm order!</h1>
 
 
-<p>
-  <b>Name:</b>
-  <%= @order.name %>
-</p>
+<table class="confirmation">
+	<tr><td><BD>Name:</BD></td><td><%= @order.name %></td></tr>
+	<tr><td><BD>Seat:</BD></td><td><%= @order.address %></td></tr>
+	<tr><td><BD>Email:</BD></td><td><%= @order.email %></td></tr>
+	<tr><td><BD>Pay Type:</BD></td><td><%= @order.pay_type %></td></tr>
+</table>	
+	
+</br>
+<%= link_to 'Confirm', thanks_url %> |
 
-<p>
-  <b>Seat Location:</b>
-  <%= @order.address %>
-</p>
+<%= link_to 'Edit', edit_order_path(@order) %>
 
-<p>
-  <b>Email:</b>
-  <%= @order.email %>
-</p>
-
-<p>
-  <b>Pay type:</b>
-  <%= @order.pay_type %>
-</p>
-
-<%= link_to 'Confirm', thanks_url %>
-
-<!-- <%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %> -->
