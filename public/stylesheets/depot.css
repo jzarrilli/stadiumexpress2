@@ -13,8 +13,9 @@
 /*common colors
 dotted purple border Midnightblue
 light purple Powderblue
-light green #CCFFCC
+light green #CCFFCC (lightest E8FFE8)
 light blue Powderblue
+also nice blue 66CCFF
 dark grey #383838
 medium grey #686868
 dusty blue #0099CC
@@ -38,7 +39,7 @@ dusty green #58A171
 #store h1 {
     	font: Tahoma, sans-serif;
 		font-size: 65px;
-        color: #58A171;
+        color: #7FFF00;
         border-bottom: 8px dotted #383838;
 		line-height: 1.5em;
 }
@@ -118,7 +119,7 @@ dusty green #58A171
   padding-top: 1em;
   padding-left: 4em;
   padding-bottom: 10em;
-  background: Gainsboro;
+  background: white;
   font-size: 20px;
   width: 70%;
   line-height: 1.25em;
@@ -134,8 +135,8 @@ dusty green #58A171
 	text-align: left;
 }
 
-#main2 table td{
-	font-size: 40px;
+#main2 table td, #main2 table th{
+	font-size: 25px;
 	text-align: left;
 }
 
@@ -298,6 +299,7 @@ margin-bottom: 10px;
 /* Styles for products/index */
 #product_list table {
         border-collapse: collapse;
+		border: 4px solid #58A171;
 }
 
 #product_list table tr td {
@@ -342,7 +344,7 @@ margin-bottom: 10px;
 }
 
 #product_list .list_line_odd {
-  background:   Seashell;
+  background:   #E8FFE8;
 }
 
 .confirmation{
