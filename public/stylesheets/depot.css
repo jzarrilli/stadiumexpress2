@@ -38,7 +38,7 @@ dusty green #58A171
 #store h1 {
     	font: Tahoma, sans-serif;
 		font-size: 65px;
-        color: #2A458B;
+        color: #42426f;
         border-bottom: 8px dotted #383838;
 		line-height: 1.5em;
 }
@@ -216,7 +216,7 @@ width: 20%;
   font-size: 40px;
   font-style: italic;
   line-height: 1em;
-  color: #003333;
+  color: #253B78;
 }
 #cart .total_cell td{
   font-size: 40px;
