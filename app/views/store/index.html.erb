@@ -8,11 +8,13 @@
 	<IT><%=sanitize product.description %></IT>
 	<div id="price_line">
 		<span class="price">
-			<%= number_to_currency(product.price) %>
+			<%= number_to_currency(product.price) %></br></br>
 		</span> 
+	</div>
 		
-		<%= button_to 'Add to Cart', line_items_path(:product_id => product)%>
+	<td class="stand_lines"><%= link_to "Add to Cart", line_items_path(:product_id => product), :method => :post%></td>
+	
+	
                 <!--<%= link_to image_tag('/images/hamburger.jpg', :size => "100x200"), line_items_path(:product_id => product)%>-->
 	</div>
-</div>
 <% end %>
