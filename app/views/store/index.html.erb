@@ -4,7 +4,7 @@
 <% @products.each do |product| %>
 <div class="entry"> 
 	<h3><%= product.title %></h3>
-	<%= image_tag(product.image_url, :height => "300") %> 
+	<%= image_tag(product.image_url, :height => '300') %>
 	<IT><%=sanitize product.description %></IT>
 	<div id="price_line">
 		<span class="price">
