@@ -339,8 +339,9 @@ margin-bottom: 10px;
 
 .location{
 	padding: .1em;
-	background: #CCFFCC;
-	border:2px solid #58A171;
+	background: white;
+	font-style: italic;
+	color: #686868;
 }
 
 .stand_lines a { color: #383838; 

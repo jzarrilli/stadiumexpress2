@@ -23,7 +23,7 @@ body, td,li{
 
 h3{
   font-size:   50px;
-  color: #0099CC;
+  color: black;
   font-family: helvetica;
 }
 
@@ -34,7 +34,7 @@ pre {
   font-size: 11px;
 }
 
-.stand_lines a { color: #CDCDCD;background-color:#CCFFCC; }
+ a { color: #666; }
 a:visited { color: #666; }
 a:hover { color: Azure; }
 
@@ -77,4 +77,8 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+.entry{
+	color: #686868;
 }
