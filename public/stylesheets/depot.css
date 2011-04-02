@@ -243,9 +243,9 @@ margin-bottom: 10px;
 
 
 .depot_form legend {
-  color: #CCFFCC;
+  color: #EBF1FF;
   background: #383838;
-  border: 4px dotted #009999;
+  border: 4px solid #383838;
   font-family: sans-serif;
   padding: 0.2em .5em;
 }
@@ -371,7 +371,7 @@ margin-bottom: 10px;
 
 #form{
 	background: #EBF1FF;
-	border: 4px solid #2A458B;
+	border: 4px solid #383838;
 	line-height:1.5em;
 	padding: .5em;
 	margin-left: .5em;
