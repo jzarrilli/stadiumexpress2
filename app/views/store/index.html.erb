@@ -4,7 +4,7 @@
 <% @products.each do |product| %>
 <div class="entry"> 
 	<h3><%= product.title %></h3>
-	<%= image_tag(product.image_url, :height => "300") %> 
+	<%= image_tag(product.image_url, :height => '300') %>
 	<IT><%=sanitize product.description %></IT>
 	<div id="price_line">
 		<span class="price">
@@ -15,6 +15,5 @@
 	<td class="stand_lines"><%= link_to image_tag("add_to_cart.jpg", :border =>0), line_items_path(:product_id => product), :method => :post%></td>
 	
 	
-                <!--<%= link_to image_tag('/images/hamburger.jpg', :size => "100x200"), line_items_path(:product_id => product)%>-->
-	</div>
+</div>
 <% end %>
