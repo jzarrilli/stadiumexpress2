@@ -11,14 +11,12 @@
 
 }*/
 /*common colors
-dotted purple border Midnightblue
-light purple Powderblue
-light green #CCFFCC (lightest E8FFE8)
+light orange #FFDABF darker organge #EEAA77
 light blue Powderblue
 also nice blue 66CCFF
 dark grey #383838
 medium grey #686868
-dusty blue #0099CC
+dusty blue #0099CC (now 00638B) 2A458B
 dusty green #58A171
 */
 
@@ -40,7 +38,7 @@ dusty green #58A171
 #store h1 {
     	font: Tahoma, sans-serif;
 		font-size: 65px;
-        color: #58A171;
+        color: #2A458B;
         border-bottom: 8px dotted #383838;
 		line-height: 1.5em;
 }
@@ -69,11 +67,11 @@ dusty green #58A171
 
 #banner {
 	font: Tahoma, sans-serif;
-  background: #686868;
+  background: black;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0em; /*not centered but leaves room for logo*/
-  border-bottom: 10px solid #CCFFCC;
+  border-bottom: 10px solid #CDCDCD;
   color: Powderblue;
   text-align: center;
   font-size: 74px;
@@ -90,7 +88,7 @@ dusty green #58A171
 	color: white;
 	vertical-align: top;
 	padding-top:0px;
-	border-bottom:.2em solid #0099CC;
+	border-bottom:0em solid #EEAA77;
 	font-size:24px;
 	line-height: 2em;
 	text-align:center;
@@ -108,7 +106,7 @@ dusty green #58A171
   padding-top: .02em;
   padding-bottom:5em;
   background: white;
-  width: 1175px;
+  width: 1100px; /*1175px goog*/
   
 }
 
@@ -239,17 +237,10 @@ margin-bottom: 10px;
 
 
 
-
-
-
 /* START:form */
 /* Styles for order form */
 
-.depot_form fieldset {
-  background: Azure;
-  border: 4px solid Midnightblue;
-  line-height:1.2em;
-}
+
 
 .depot_form legend {
   color: #CCFFCC;
@@ -282,13 +273,6 @@ margin-bottom: 10px;
   margin: 0.5em 0;
 }
 /* END:form */
-
-
-
-
-
-
-
 
 
 /*VENDOR FORMATTING
@@ -362,8 +346,8 @@ margin-bottom: 10px;
 .stand_lines a { color: #383838; 
 	padding: .2em;
 	margin-bottom: 3em;
-	background-color:Azure; 
-	border: 2px solid #0099CC;
+	background-color:white; 
+	border: 2px solid #CDCDCD;
 	padding:.2em;
 	line-height:2em;
 	 }
@@ -387,6 +371,7 @@ margin-bottom: 10px;
 #form{
 	background: #CCFFCC;
 	border: 4px solid #58A171;
-	line-height:2em;
-	padding: 1em;
+	line-height:1.5em;
+	padding: .5em;
+	margin-left: .5em;
 }
