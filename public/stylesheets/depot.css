@@ -75,7 +75,7 @@ dusty green #58A171
   color: Powderblue;
   text-align: center;
   font-size: 0px;
-  width: 100%;
+  width: 103%;
 
 }
 
@@ -94,14 +94,14 @@ dusty green #58A171
 	font-size:24px;
 	line-height: 2em;
 	text-align:center;
-	width: 100%;
+	width: 103%;
 }
 
-#columns {
+/*#columns {
   background: #383838;
   width: 100%;
 
-}
+}*/
 
 #main {
   padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
