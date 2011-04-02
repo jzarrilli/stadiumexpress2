@@ -19,7 +19,7 @@
   
 	  <div>
 	    <%= f.label :address, "Seat Number:" %>
-	    <%= f.text_area :address, :rows => 5, :cols =>40 %></br>
+	    <%= f.text_field :address, :size =>40 %></br>
 	  </div>
   
 	  <div>
@@ -33,6 +33,7 @@
 	  </div>
   
   
-	  <%= f.submit "Place Order"%>
+	  <!--<%= f.submit "Place Order"%>-->
+          <%= image_submit_tag('/images/placeorder.png')%>
 	<% end %>
 </div>
