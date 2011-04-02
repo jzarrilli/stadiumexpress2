@@ -17,10 +17,10 @@ Depot::Application.configure do config.action_mailer.delivery_method = :smtp
   	:address => "smtp.gmail.com",
   	:port => 587,
   	:authentication => :plain,
-  	:enable_starttls_auto => true,
-  	:domain => ENV['stadiumexpress.heroku.com'],
-  	:user_name => ENV['osibodu@gmail.com'],
-  	:password => ENV['Cesc4Fab'],
+  	#:enable_starttls_auto => true,
+  	:domain => "stadiumexpress.heroku.com",
+  	:user_name => "osibodu@gmail.com",
+  	:password => "Cesc4Fab",
   }
   config.action_mailer.raise_delivery_errors=true
 end
