@@ -29,11 +29,11 @@
   
 	  <div>
 	    <%= f.label :pay_type, "Pay with:" %>
-	    <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %></br>
+	    <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %>
 	  </div>
   
   
 	  <!--<%= f.submit "Place Order"%>-->
-          <%= image_submit_tag('/images/placeorder.png')%>
+         </br> <%= image_submit_tag('/images/placeorder.png')%>
 	<% end %>
 </div>

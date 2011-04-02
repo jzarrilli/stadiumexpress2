@@ -203,7 +203,6 @@ text-align:center;
 	
 }
 
-#price_line{}
 
 /* Styles for the cart in the sidebar */
 #cart, #cart table td{
@@ -384,3 +383,10 @@ margin-bottom: 10px;
 }
 
 .subj{text-align:left;}
+
+#form{
+	background: #CCFFCC;
+	border: 4px solid #58A171;
+	line-height:2em;
+	padding: 1em;
+}
