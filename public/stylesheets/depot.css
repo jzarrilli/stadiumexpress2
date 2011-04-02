@@ -70,8 +70,8 @@ dusty green #58A171
 #banner {
 	font: Tahoma, sans-serif;
   background: #686868;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 0em; /*not centered but leaves room for logo*/
   border-bottom: 10px solid #CCFFCC;
   color: Powderblue;

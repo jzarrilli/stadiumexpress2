@@ -7,7 +7,7 @@
 		</br>
 		<IT><BD><td colspan="2">Total</td></IT></BD>
 		<td class="total_cell">
-			<IT><BD><%= number_to_currency(@cart.total_price) %></BD></IT></font>
+			<IT><BD><%= number_to_currency(@cart.total_price) %></br></br></BD></IT></font>
 		</td>
 	</tr>
 	
@@ -15,12 +15,11 @@
 
 <table width="5%">
 	<tr class"buttons">
-		<td><%= button_to 'Empty cart', @cart, :method => :delete,
-:confirm => 'Are you sure you wish to empty cart?' %></td>
-
-		<td><%= button_to 'Order More', store_index_url, :method => :get %></td>
-
-		<td><%= button_to 'Proceed to Checkout', new_order_url, :method => :get %></td>
+		<td><%= link_to image_tag("order_more.jpg", :border =>0), store_index_url, :method => :get%></td>	
+		<td><%= link_to image_tag("proceed_to_checkout.jpg", :border =>0), new_order_url, :method => :get%></td>
+		<td><%= link_to image_tag("empty_cart.jpg", :border =>0), @cart, :method => :delete,
+:confirm => 'Are you sure you wish to empty cart?'%></td>
+	
 	</tr>
 </table>
 
