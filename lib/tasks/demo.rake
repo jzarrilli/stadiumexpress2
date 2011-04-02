@@ -1,52 +1,48 @@
 task :demo => :environment do
   
   Product.delete_all
-  Product.create(:title => 'Philly Cheesesteak',
+  Product.create(:title => 'Philly Pretzel',
     :description => 
       %{<p>
-          This is a Philly Cheesesteak.
+          This is a Philly Pretzel.
         </p>},
-    :image_url =>   '/images/phillycheesesteak.jpg',    
-    :price => 7.00)
+    :image_url =>   '/images/pretzel.jpg',    
+    :price => 1.50)
     
   # . . .
-  Product.create(:title => 'Hamburger',
+  Product.create(:title => 'Can of Coca Cola',
     :description =>
       %{<p>
-          This is a Hamburger.
+          This is a can of Coca Cola.
         </p>},
-    :image_url => '/images/hamburger.jpg',
-    :price => 5.00)
+    :image_url => '/images/cocacola.jpg',
+    :price => 1.00)
   # . . .
   
-  Product.create(:title => 'Cheeseburger',
+  Product.create(:title => 'Can of Sprite',
      :description =>
        %{<p>
-           This is a Cheeseburger.
+           This is a can of Sprite.
          </p>},
-     :image_url => '/images/hamburger.jpg',
-     :price => 6.00)
+     :image_url => '/images/sprite.jpg',
+     :price => 1.00)
    # . . .
 
-  Product.create(:title => 'Salad',
+  Product.create(:title => 'Bottle of Water',
     :description => 
       %{<p>
-          This is a Salad.
+          This is a bottle of water.
         </p>},
-    :image_url => '/images/salad.jpg',
-    :price => 7.00)
+    :image_url => '/images/water.jpg',
+    :price => 1.00)
+
+  Venue.create(:name => 'Meiklejohn Stadim (you are here!)')
 
   Venue.create(:name => 'Franklin Field')
   
-  Venue.create(:name => 'Phillies Stadium')
+  Venue.create(:name => 'Palestra')
   
-  Venue.create(:name => 'Flyers Arena')
-  
-  Stand.create(:name => 'Stand 1', :location => 'Location 1')
-  
-  Stand.create(:name => 'Stand 2', :location => 'Location 2')
-   
-  Stand.create(:name => 'Stand 3', :location => 'Location 3')
+  Stand.create(:name => 'Concession Stand', :location => 'Entrance Gate')
   
   User.create(:name => 'Lindsey', :password => 'lindsey')
   
