@@ -15,8 +15,9 @@
 
 <table width="5%">
 	<tr class"buttons">
-		<td><%= link_to image_tag("order_more.jpg", :border =>0), store_index_url, :method => :get%></td>	
 		<td><%= link_to image_tag("proceed_to_checkout.jpg", :border =>0), new_order_url, :method => :get%></td>
+		<td><%= link_to image_tag("order_more.jpg", :border =>0), store_index_url, :method => :get%></td>	
+
 		<td><%= link_to image_tag("empty_cart.jpg", :border =>0), @cart, :method => :delete,
 :confirm => 'Are you sure you wish to empty cart?'%></td>
 	
