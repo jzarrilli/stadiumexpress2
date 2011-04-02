@@ -74,13 +74,15 @@ dusty green #58A171
   border-bottom: 10px solid #CDCDCD;
   color: Powderblue;
   text-align: center;
-  font-size: 74px;
+  font-size: 0px;
   width: 100%;
 
 }
 
 #banner img {
   float: center;
+  height: 325px;
+  width: 600px;
 }
 
 #stripe{
