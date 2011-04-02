@@ -334,8 +334,8 @@ margin-bottom: 10px;
 }
 
 .confirmation{
-	background: #CCFFCC;
-	border: 4px solid #58A171;
+	background: #EBF1FF;
+	border: 4px solid #383838;
 	line-height:1.2em;
 }
 
@@ -362,8 +362,8 @@ margin-bottom: 10px;
 		}
 		
 .cart_items{
-	background:Azure;
-	border: 3px solid #0099CC;
+	background:#EBF1FF;
+	border: 3px solid #383838;
 	padding-left: 1em;
 	padding-right: 1em;
 	text-align:left;
