@@ -14,5 +14,6 @@ class LineItem < ActiveRecord::Base
   def cust_name
     order.name
   end
+
   
 end
