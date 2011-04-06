@@ -5,7 +5,7 @@
     <th>Name</th>    <th></th>
 	<th>Product</th>    <th></th>
     <th>Quantity</th><th></th>
-    <th>Time</th>
+    <th>Status</th>
 
     <th></th>
   </tr>
@@ -15,6 +15,7 @@
 	<td><%= line_item.order.name %></td><td></td>
     <td><%= line_item.product.title %></td><td></td>
 	<td><%= line_item.quantity %></td><td></td>
+	<td><%= line_item.status %></td><td></td>
 	
     <!-- <td><%= link_to 'Show', line_item %></td> -->
     <td><%= link_to 'Edit', edit_line_item_path(line_item) %></td>

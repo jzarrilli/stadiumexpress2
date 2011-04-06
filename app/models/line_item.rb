@@ -10,9 +10,9 @@ class LineItem < ActiveRecord::Base
     product.price * quantity
   end
   
-  # if order.status == 'Confirmed' then
-  #   line_item.status = 'Confirmed'
-  # end
+  def order_status
+    order.status
+  end 
   
   # def prod_tit
   #     product.title

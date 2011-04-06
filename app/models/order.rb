@@ -12,4 +12,7 @@ class Order < ActiveRecord::Base
     end
   end
     
+  def status
+  end 
+  
 end
