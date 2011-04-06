@@ -10,6 +10,12 @@ class LineItem < ActiveRecord::Base
     product.price * quantity
   end
   
+  def ord_stat 
+    order.order_status
+  end 
+  
+  
+  
   
   # def prod_tit
   #     product.title

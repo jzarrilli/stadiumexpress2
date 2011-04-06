@@ -1,6 +1,6 @@
 class AddStatusToLineItems < ActiveRecord::Migration
     def self.up
-      add_column :line_items, :status, :integer, :default => 0
+      add_column :line_items, :status, :integer, :default => 1
     end
 
     def self.down

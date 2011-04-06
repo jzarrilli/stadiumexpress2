@@ -5,8 +5,7 @@ class CreateLineItems < ActiveRecord::Migration
       t.string product.title
       t.integer :cart_id
       t.string order.name
-      t.integer :status, :default => 0
-      t.integer :order_status, :default => 0
+      t.integer order.order_status
       
       t.timestamps
     end
