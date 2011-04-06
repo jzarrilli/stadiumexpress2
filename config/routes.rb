@@ -10,7 +10,7 @@ Depot::Application.routes.draw do
   resources :venues
 
   resources :stands
-
+  
   get 'admin' => 'admin#index'
 
   controller :sessions do
