@@ -11,6 +11,8 @@ Depot::Application.routes.draw do
 
   resources :stands
   
+  resources :history
+  
   get 'admin' => 'admin#index'
 
   controller :sessions do
