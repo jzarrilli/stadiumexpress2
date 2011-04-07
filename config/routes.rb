@@ -12,7 +12,7 @@ Depot::Application.routes.draw do
   resources :stands
   
   resources :history
-  
+
   get 'admin' => 'admin#index'
 
   controller :sessions do
@@ -24,22 +24,27 @@ Depot::Application.routes.draw do
 
   resources :users
 
-  resources :orders do
+  resources :orders do 
     post 'confirm', :on => :member
   end
+
 
   resources :line_items do
     post 'fill', :on => :member
     post 'archive', :on => :member
     get 'add', :on => :member
     get 'remove', :on => :member
-  end 
-  
+  end
+    
+
   resources :carts
 
   get "store/index"
   resources :products do
     get :who_bought, :on => :member
+  end
+  resources :orders do
+    get :who_ordered, :on => :member
   end
 
 
