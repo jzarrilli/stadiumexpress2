@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @hide_cart = true
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @order }
@@ -86,6 +86,14 @@ class OrdersController < ApplicationController
 
   # DELETE /orders/1
   # DELETE /orders/1.xml
+  def confirm
+    @order = Order.find(params[:id])
+    @order.line_items.each do |line_item|
+      line_item.status = LineItem::VERFIIED
+      line_item.save!
+    end
+  end
+  
   def destroy
     @order = Order.find(params[:id])
     @order.destroy
@@ -94,14 +102,20 @@ class OrdersController < ApplicationController
       format.html { redirect_to(orders_url) }
       format.xml  { head :ok }
     end
+
+
   end
-  
-  def confirm
-    @order = Order.find(params[:id])
-    @order.line_items.each do |line_item|
-      line_item.status = LineItem::VERIFIED
-      line_item.save!
+
+  def who_ordered
+    /@product = Product.find(params[:id])*/
+    @orders = Order.all.sort_by(&:updated_at)
+
+    respond_to do |format|
+      format.atom
+      /format.xml { render :xml => @product }*/
+      format.xml { render :xml => @order }
     end
-    redirect_to thanks_path
+    
   end
+  redirect_to thanks_path
 end

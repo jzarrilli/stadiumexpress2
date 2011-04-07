@@ -1,4 +1,6 @@
 class HistoryController < ApplicationController
+
+  
   def index
     @line_items = LineItem.where(:status => [LineItem::PICKED_UP])
 
