@@ -97,6 +97,41 @@ dusty green #58A171
 	width: 103%;
 }
 
+/* Styles for the cart in the sidebar */
+#cart, #cart table { 
+	font-size: smaller; 
+	background: #383838;
+}
+
+#cart table { 
+	border-top: 3px;
+	border-bottom: 3px;
+	margin-bottom: 10px;
+	background: #383838;
+}
+
+#cart .cart_title{
+	font-weight: bold;
+	color: Powderblue;
+	background: #383838;
+}
+
+#main .total_line tr{
+  font-weight:bold;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1em;
+  background: #383838;
+}
+
+#cart .total_cell td{
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1em;
+  font-weight:bold;
+  background: #383838;
+}
+
 /*#columns {
   background: #383838;
   width: 100%;
@@ -205,7 +240,7 @@ text-align:center;
 
 
 /* Styles for the cart in the sidebar */
-#cart, #cart table td{
+/*#cart, #cart table td{
 font-size: 40px;
 color: white;
 width: 20%;
@@ -235,7 +270,7 @@ width: 20%;
 border-top: 3px dotted Midnightblue;
 border-bottom: 3px dotted Midnightblue;
 margin-bottom: 10px;
-}
+}*/
 
 
 

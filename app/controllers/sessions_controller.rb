@@ -22,10 +22,12 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    session[:cart_id] = nil
     redirect_to thanks_url, :notice => "Logged out"
   end
   
   def thanks_page
+    @hide_cart = true
   end
 
 end

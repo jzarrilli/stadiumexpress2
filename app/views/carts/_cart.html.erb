@@ -1,12 +1,29 @@
-<!--<div class="cart_title">Your Cart</div>
-<table>
-<%= render(cart.line_items) %>
+<% if cart.line_items.count > 0%>
+	<div class="cart_title">Your Cart</div>
+	<table>
+	<%= render(cart.line_items) %>
 
-<tr class="total_line">
-<td colspan="2">Total</td>
-<td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
-</tr>
-</table>
-<%= button_to "Checkout", new_order_url, :method=>:get %>
+	<tr class="total_line">
+	<td colspan="2">Total</td>
+	<td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
+	</tr>
+	</table>
+
+	<table width="5%">
+		<tr class"buttons">
+			<td><%= link_to image_tag("proceed_to_checkout.jpg", :border =>0), new_order_url, :method => :get%></td>
+
+			<td><%= link_to image_tag("empty_cart.jpg", :border =>0), @cart, :method => :delete,
+	:confirm => 'Are you sure you wish to empty cart?'%></td>
+	
+		</tr>
+	</table>
+
+<%end%>
+
+
+
+
+<!-- <%= button_to "Checkout", new_order_url, :method=>:get %>
 <%= button_to 'Empty cart', cart, :method => :delete,
-:confirm => 'Are you sure?' %>-->
+:confirm => 'Are you sure?' %> -->
