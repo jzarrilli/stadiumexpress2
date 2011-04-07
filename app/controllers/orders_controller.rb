@@ -117,5 +117,4 @@ class OrdersController < ApplicationController
     end
     
   end
-  redirect_to thanks_path
 end

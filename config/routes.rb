@@ -32,8 +32,8 @@ Depot::Application.routes.draw do
   resources :line_items do
     post 'fill', :on => :member
     post 'archive', :on => :member
-    get 'add', :on => :member
-    get 'remove', :on => :member
+    post 'add', :on => :member
+    post 'remove', :on => :member
   end
     
 
