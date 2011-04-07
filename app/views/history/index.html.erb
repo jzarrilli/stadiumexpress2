@@ -6,6 +6,7 @@
 	<th>Product</th>    <th></th>
     <th>Quantity</th><th></th>
     <th>Price</th><th></th>
+	<th>Date</th>
 
   </tr>
 
@@ -15,6 +16,8 @@
     <td><%= line_item.product.title %></td><td></td>
 	<td><%= line_item.quantity %></td><td></td>
 	<td><%= number_to_currency(line_item.total_price) %></td>
+	<td><%= @order.time.strftime('%d/%m/%y | %R') %></td>
+
 	
 	
     <td><%= link_to 'Show', order_path(line_item.order) %></td>
