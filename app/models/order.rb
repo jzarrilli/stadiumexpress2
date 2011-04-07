@@ -9,9 +9,11 @@ class Order < ActiveRecord::Base
   validates :name, :address, :email, :pay_type, :presence => true
   validates :pay_type, :inclusion => PAYMENT_TYPES
   
-  def total_price(cart)
-    cart.line_items.to_a.sum { |item| item.total_price }
-  end
+  
+     def total_price 
+        @order.line_items.to_a.sum { |item| item.total_price }
+     end
+ 
  
   
   def add_line_items_from_cart(cart)
