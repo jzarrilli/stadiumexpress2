@@ -7,7 +7,6 @@
     <th>Quantity</th><th></th>
     <th>Status</th>
 
-    <th></th>
   </tr>
 
 <% @line_items.each do |line_item| %>
@@ -19,7 +18,9 @@
 	
     <!-- <td><%= link_to 'Show', line_item %></td> -->
     <td><%= link_to 'Edit', edit_line_item_path(line_item) %></td>
-    <td><%= link_to 'Destroy', line_item, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Fill', fill_line_item_path(line_item), :method => :post %></td>
+    <td><%= link_to 'Archive', archive_line_item_path(line_item), :method => :post %></td>
+
   </tr>
 <% end %>
 </table>

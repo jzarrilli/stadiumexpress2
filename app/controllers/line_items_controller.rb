@@ -4,7 +4,7 @@ class LineItemsController < ApplicationController
   # GET /line_items
   # GET /line_items.xml
   def index
-    @line_items = LineItem.all
+    @line_items = LineItem.where(:status => [LineItem::VERIFIED, LineItem::FILLED])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -84,5 +84,30 @@ class LineItemsController < ApplicationController
       format.html { redirect_to(line_items_url) }
       format.xml  { head :ok }
     end
+  end  
+  
+  def fill
+     @line_item = LineItem.find(params[:id])
+       @line_item.status = LineItem::FILLED
+       @line_item.save!
+  
+
+     respond_to do |format|
+       format.html { redirect_to(line_items_url) }
+       format.xml  { render :xml => @line_items }
+     end
   end
+
+     def archive
+        @line_item = LineItem.find(params[:id])
+          @line_item.status = LineItem::PICKED_UP
+          @line_item.save!
+
+
+        respond_to do |format|
+          format.html { redirect_to(line_items_url) }
+          format.xml  { render :xml => @line_items }
+        end
+   end
+  
 end

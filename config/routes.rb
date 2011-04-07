@@ -24,10 +24,15 @@ Depot::Application.routes.draw do
 
   resources :users
 
-  resources :orders
+  resources :orders do
+    post 'confirm', :on => :member
+  end
 
-  resources :line_items
-
+  resources :line_items do
+    post 'fill', :on => :member
+    post 'archive', :on => :member
+  end 
+  
   resources :carts
 
   get "store/index"
