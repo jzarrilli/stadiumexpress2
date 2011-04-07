@@ -12,7 +12,7 @@
 	
 </br>
 
-	<td><%= link_to image_tag("confirm.jpg", :border =>0), thanks_url, :method => :get, :order_status => '1'%></td>
+	<td><%= link_to image_tag("confirm.jpg", :border =>0), confirm_order_path(@order), :method => :post%></td>
 	<td><%= link_to image_tag("edit_details.png", :border =>0),edit_order_path(@order) , :method => :get%></td>
 
 

@@ -24,7 +24,9 @@ Depot::Application.routes.draw do
 
   resources :users
 
-  resources :orders
+  resources :orders do
+    post 'confirm', :on => :member
+  end
 
   resources :line_items
 

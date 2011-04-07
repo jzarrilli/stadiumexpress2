@@ -94,4 +94,13 @@ class OrdersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def confirm
+    @order = Order.find(params[:id])
+    @order.line_items.each do |line_item|
+      line_item.status = LineItem::VERIFIED
+      line_item.save!
+    end
+    redirect_to thanks_path
+  end
 end
