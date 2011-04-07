@@ -17,7 +17,6 @@ class OrdersController < ApplicationController
   # GET /orders/1.xml
   def show
     @order = Order.find(params[:id])
-
     @hide_cart = true
     
     respond_to do |format|
