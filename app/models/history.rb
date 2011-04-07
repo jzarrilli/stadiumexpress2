@@ -7,13 +7,7 @@ class History < ActiveRecord::Base
     product.price * quantity
   end
   
-  def prod_tit
-    product.title
-  end
 
-  def cust_name
-    order.name
-  end
 
   
 end

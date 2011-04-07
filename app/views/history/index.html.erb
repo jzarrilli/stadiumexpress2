@@ -4,17 +4,18 @@
   <tr>
     <th>Name</th>    <th></th>
 	<th>Product</th>    <th></th>
-    <th>Quantity</th>
+    <th>Quantity</th><th></th>
 
-    <th></th>
   </tr>
 
 <% @line_items.each do |line_item| %>
   <tr>
-	<td><%= line_item.cust_name %></td><td></td>
-    <td><%= line_item.prod_tit %></td><td></td>
+	<td><%= line_item.order.name %></td><td></td>
+    <td><%= line_item.product.title %></td><td></td>
 	<td><%= line_item.quantity %></td><td></td>
 	
+    <td><%= link_to 'Show', show_order_path(@order) %></td>
+
   </tr>
 <% end %>
 </table>
