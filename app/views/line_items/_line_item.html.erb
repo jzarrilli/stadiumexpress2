@@ -15,6 +15,9 @@
 		<td>
 		<td class="item_price">
 			<%= number_to_currency(line_item.total_price) %>
-		</td><td> 
+		</td>
+		<td><%= link_to '+', add_line_item_path(line_item) %></td>
+		<td><%= link_to '-', remove_line_item_path(line_item) %></td>
+						<!-- <td><%= link_to image_tag("proceed_to_checkout.jpg", :border =>0), new_order_url, :method => :get%></td> -->
 	</tr>
 </table>

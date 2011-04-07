@@ -109,5 +109,29 @@ class LineItemsController < ApplicationController
           format.xml  { render :xml => @line_items }
         end
    end
+   
+   def add
+      @line_item = LineItem.find(params[:id])
+        @line_item.quantity += 1
+        @line_item.save!
+
+
+      respond_to do |format|
+        format.html { redirect_to(store_index_url) }
+        format.xml  { render :xml => @line_items }
+      end
+   end
+   
+   def remove
+      @line_item = LineItem.find(params[:id])
+        @line_item.quantity -= 1
+        @line_item.save!
+
+
+      respond_to do |format|
+        format.html { redirect_to(store_index_url) }
+        format.xml  { render :xml => @line_items }
+      end
+   end
   
 end

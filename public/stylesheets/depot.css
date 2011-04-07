@@ -114,11 +114,12 @@ dusty green #58A171
 	font-weight: bold;
 	color: Powderblue;
 	background: #383838;
+	font-size:24px;
 }
 
 #main .total_line tr{
   font-weight:bold;
-  font-size: 10px;
+  font-size: 24px;
   font-style: italic;
   line-height: 1em;
   background: #383838;
