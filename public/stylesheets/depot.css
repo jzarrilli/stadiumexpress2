@@ -39,7 +39,6 @@ dusty green #58A171
     	font: Tahoma, sans-serif;
 		font-size: 65px;
         color: #EFE66E;
-        border-bottom: 8px dotted #383838;
 		line-height: 1.5em;
 }
 
@@ -67,22 +66,19 @@ dusty green #58A171
 
 #banner {
   font: Tahoma, sans-serif;
-  background: #231f20;
-  padding-top: 0px;
+  background: black;
+  padding-top: 30px;
   padding-bottom: 0px;
-  padding-left: 0em; /*not centered but leaves room for logo*/
-  border-bottom: 10px solid #CDCDCD;
+  padding-left: 0em; /*nocentered but leaves room for logo*/
   color: Powderblue;
   text-align: center;
   font-size: 0px;
-  width: 103%;
+  width: 100%;
 
 }
 
 #banner img {
   float: center;
-  height: 400px;
-  width: 700px;
 }
 
 #stripe{
@@ -94,7 +90,7 @@ dusty green #58A171
 	font-size:24px;
 	line-height: 2em;
 	text-align:center;
-	width: 103%;
+    width: 100%;
 }
 
 /* Styles for the cart in the stripe */
@@ -145,7 +141,7 @@ dusty green #58A171
   padding-top: .02em;
   padding-bottom:5em;
   background: black;
-  width: 97%; /*1175px goog*/
+  width: 95%; /*1175px goog*/
   
 }
 
