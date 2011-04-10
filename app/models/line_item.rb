@@ -17,5 +17,6 @@ class LineItem < ActiveRecord::Base
   end
   
 
+
   
 end

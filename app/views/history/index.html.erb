@@ -2,23 +2,21 @@
 
 <table>
   <tr>
-    <th>Name</th>    <th></th>
-	<th>Product</th>    <th></th>
-    <th>Quantity</th><th></th>
-    <th>Price</th><th></th>
+    <th>Name</th>    <th>&nbsp</th>
+	<th>Product</th>    <th>&nbsp</th>
+    <th>Quantity</th><th>&nbsp</th>
+    <th>Price</th><th>&nbsp</th>
+
 
   </tr>
 
 <% @line_items.each do |line_item| %>
   <tr>
-	<td><%= line_item.order.name %></td><td></td>
-    <td><%= line_item.product.title %></td><td></td>
-	<td><%= line_item.quantity %></td><td></td>
-	<td><%= number_to_currency(line_item.total_price) %></td>
-
-	
-	
-    <td><%= link_to 'Show', order_path(line_item.order) %></td>
+	<td><%= line_item.order.name %></td><td>&nbsp</td>
+    <td><%= line_item.product.title %></td><td>&nbsp</td>
+	<td><%= line_item.quantity %></td><td>&nbsp</td>
+	<td><%= number_to_currency(line_item.total_price) %></td><td>&nbsp</td>	
+    <td><%= link_to 'Details', order_path(line_item.order) %></td>
 
   </tr>
 <% end %>
