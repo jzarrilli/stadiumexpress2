@@ -140,11 +140,11 @@ dusty green #58A171
 }*/
 
 #main {
-  padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
+  padding-left: 5%; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
   padding-top: .02em;
   padding-bottom:5em;
   background: white;
-  width: 1100px; /*1175px goog*/
+  width: 97%; /*1175px goog*/
   
 }
 
@@ -228,7 +228,7 @@ text-align:center;
 }
 
 .cart_items td{
-	text-align:center;
+	text-align:left;
 }
 
 .cart_items .subj td{
@@ -236,18 +236,20 @@ text-align:center;
 	border-bottom:2px solid #009999;
 	color:black;
 	text-align:left;
-	
 }
+
+
 
 
 /* Styles for the cart in the sidebar */
-/*#cart, #cart table td{
+#cart, #cart table td{
 font-size: 40px;
 color: white;
-width: 20%;
+width: 100%;
+text-align: left;
 }
 
-#main .total_line tr{
+#main .total_line td{
   font-weight:bold;
   font-size: 40px;
   font-style: italic;
@@ -268,8 +270,8 @@ width: 20%;
 }
 
 #cart table {
-border-top: 3px dotted Midnightblue;
-border-bottom: 3px dotted Midnightblue;
+/*border-top: 3px dotted Midnightblue;
+*/border-bottom: 3px dotted #686868;
 margin-bottom: 10px;
 }*/
 
