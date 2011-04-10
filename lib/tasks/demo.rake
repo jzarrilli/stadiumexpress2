@@ -36,13 +36,17 @@ task :demo => :environment do
     :image_url => '/images/water.jpg',
     :price => 1.00)
 
-  Venue.create(:name => 'Meiklejohn Stadim (you are here!)')
-
-  Venue.create(:name => 'Franklin Field')
-  
-  Venue.create(:name => 'Palestra')
-  
-  Stand.create(:name => 'Concession Stand', :location => 'Entrance Gate')
+  # Venue.create(:name => 'Meiklejohn Stadim (you are here!)', :image_url => '/images/MStadium.png')
+  # 
+  # Venue.create(:name => 'Franklin Field', :image_url => '/images/FranklinField.png')
+  # 
+  # Venue.create(:name => 'Palestra', :image_url => '/images/Palestra.png')
+  # 
+  # Venue.create(:name => 'Detkin Lab', :image_url => '/images/Detkin.png')
+  # 
+  # Stand.create(:name => 'Home Stand', :location => 'Entrance Gate')
+  # 
+  # Stand.create(:name => 'Away Stand', :location => 'Entrance Gate')
   
   User.create(:name => 'Lindsey', :password => 'lindsey')
   

@@ -38,7 +38,7 @@ dusty green #58A171
 #store h1 {
     	font: Tahoma, sans-serif;
 		font-size: 65px;
-        color: #42426f;
+        color: #EFE66E;
         border-bottom: 8px dotted #383838;
 		line-height: 1.5em;
 }
@@ -66,7 +66,7 @@ dusty green #58A171
 /* Styles for main page */
 
 #banner {
-	font: Tahoma, sans-serif;
+  font: Tahoma, sans-serif;
   background: #231f20;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -144,7 +144,7 @@ dusty green #58A171
   padding-left: 5%; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
   padding-top: .02em;
   padding-bottom:5em;
-  background: white;
+  background: black;
   width: 97%; /*1175px goog*/
   
 }
@@ -157,8 +157,9 @@ dusty green #58A171
   padding-top: 1em;
   padding-left: 4em;
   padding-bottom: 10em;
-  background: white;
+  background: black;
   font-size: 20px;
+  font-color: #EFE66E;
   width: 70%;
   line-height: 1.25em;
   
@@ -166,16 +167,19 @@ dusty green #58A171
 
 #main2 h1{
 	font-size: 40px;
+	font-color: #EFE66E;
 }
 
 #main2 table tr{
 	font-size: 25px;
 	text-align: left;
+	font-color: #EFE66E;
 }
 
 #main2 table td, #main2 table th{
 	font-size: 25px;
 	text-align: left;
+    font-color: #EFE66E;
 }
 
 
@@ -193,7 +197,7 @@ dusty green #58A171
 
 /*side font*/
 #side a {
-  color: #383838;
+  color: #EFE66E;
   font-size: 40px;
   line-height: 1em;
 }
@@ -284,7 +288,7 @@ margin-bottom: 10px;
 
 
 .depot_form legend {
-  color: #EBF1FF;
+  color: #EFE66E;
   background: #383838;
   border: 4px solid #383838;
   font-family: sans-serif;
@@ -348,7 +352,7 @@ margin-bottom: 10px;
 }
 
 #product_list .list_description dt {
-	color:        #244;
+	color:        #EFE66E;
 	font-weight:  bold;
 	font-size:    larger;
 }
@@ -382,10 +386,10 @@ margin-bottom: 10px;
 	padding: .1em;
 	background: white;
 	font-style: italic;
-	color: #686868;
+	color: #EFE66E;
 }
 
-.stand_lines a { color: #383838; 
+.stand_lines a { color: #EFE66E; 
 	padding: .2em;
 	margin-bottom: 3em;
 	background-color:white; 

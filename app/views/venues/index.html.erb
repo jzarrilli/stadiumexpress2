@@ -1,23 +1,40 @@
-<h1>Select Stadium</h1>
+<h1>Select a Stadium</h1>
 
 <table>
+
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+	<td><%= link_to image_tag("FranklinField.png", :border => 0), stands_path %></td>
   </tr>
 
+  <tr>
+    <td><%= link_to image_tag("MStadium.png", :border => 0), stands_path %></td>
+  </tr>
+
+  <tr>
+    <td><%= link_to image_tag("Palestra.png", :border => 0), stands_path %></td>	
+  </tr>
+
+  <tr>
+    <td><%= link_to image_tag("Detkin.png", :border => 0), stands_path %></td>
+  </tr>
+  
+</table>
+
+<!-- <table>
 <% @venues.each do |venue| %>
   <tr>
     <td class="stand_lines"><%= link_to venue.name, stands_path %></td>
-    <!-- <td><%= link_to 'Show', venue %></td>
+
+
+    <td><%= link_to 'Show', venue %></td>
     <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
     <td><%= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => 
-		:delete %></td> -->
+		:delete %></td>
   </tr>
 <% end %>
-</table>
+</table> -->
 
 <br />
 
- <!-- <%= link_to 'New Venue', new_venue_path %> -->
+<!-- <%= link_to 'New Venue', new_venue_path %> -->
+

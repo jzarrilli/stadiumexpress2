@@ -1,30 +1,33 @@
-<h1>Select Stand</h1>
+<h1>Select a Stand</h1>
 
 <table>
+
   <tr>
-    <!--<th>Name</th>
-    <th>Location</th>-->
-    <th></th>
-    <th></th>
-    <th></th>
+	<td><%= link_to image_tag("HomeStand.png", :border => 0), store_index_path %></td>
   </tr>
 
-<% @stands.each do |stand| %>
+  <tr>
+    <td><%= link_to image_tag("AwayStand.png", :border => 0), store_index_path %></td>
+  </tr>
+  
+</table>
+
+<!-- <% @stands.each do |stand| %>
 <table width="100%">
 	<tr class="stand_lines">
 		<td><%= link_to stand.name, store_index_path %> </td>
 		<td class="location"><%= stand.location %></td>
 	</tr>
 </table> 
- <tr>
+ <tr> -->
     
     
     <!-- <td><%= link_to 'Show', stand %></td>
         <td><%= link_to 'Edit', edit_stand_path(stand) %></td>
         <td><%= link_to 'Destroy', stand, :confirm => 'Are you sure?', :method => :delete %></td>-->
       </tr>
-    <% end %>
- </table>
+    <!-- <% end %>
+ </table> -->
 
  <br />
 
