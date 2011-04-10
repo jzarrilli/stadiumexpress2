@@ -2,19 +2,19 @@
 
 <table>
   <tr>
-    <th>Name</th>    <th></th>
-	<th>Product</th>    <th></th>
-    <th>Quantity</th><th></th>
+    <th>Name</th>    <th>&nbsp</th>
+	<th>Product</th>    <th>&nbsp</th>
+    <th>Quantity</th><th>&nbsp</th>
     <th>Status</th>
 
   </tr>
 
 <% @line_items.each do |line_item| %>
   <tr>
-	<td><%= line_item.order.name %></td><td></td>
-    <td><%= line_item.product.title %></td><td></td>
-	<td><%= line_item.quantity %></td><td></td>
-	<td><%= line_item.status %></td><td></td>
+	<td><%= line_item.order.name %></td><td>&nbsp</td>
+    <td><%= line_item.product.title %></td><td>&nbsp</td>
+	<td><%= line_item.quantity %></td><td>&nbsp</td>
+	<td><%= line_item.status %></td><td>&nbsp</td>
 	
     <!-- <td><%= link_to 'Show', line_item %></td> -->
     <td><%= link_to 'Edit', edit_line_item_path(line_item) %></td>
