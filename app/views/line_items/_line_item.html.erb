@@ -11,13 +11,12 @@
 	</tr> -->
 	<tr>
 		<td><%= line_item.product.title%></td>
-		<td><%= line_item.quantity%></td>
-		<td>
+		<td><%= line_item.quantity%></td><td>&nbsp</td><td>&nbsp</td>
 		<td class="item_price">
 			<%= number_to_currency(line_item.total_price) %>
 		</td>
-		<td><%= link_to image_tag("addbutton.png", :border => 0), line_items_path(:product_id => line_item.product), :method => :post %></td>
-		<td><%= link_to image_tag("removebutton.png", :border => 0), remove_line_item_path(line_item), :method => :get %></td>
+		<td><%= link_to image_tag("addbutton.png", :border => 0), add_line_item_path(line_item), :method => :post %></td>
+		<td><%= link_to image_tag("removebutton.png", :border => 0), remove_line_item_path(line_item), :method => :post %></td>
 
 	</tr>
 </table>
