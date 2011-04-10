@@ -126,13 +126,19 @@ class LineItemsController < ApplicationController
    
    def remove
       @line_item = LineItem.find(params[:id])
+       if @line_item.quantity >= 1 then
         @line_item.quantity -= 1
         @line_item.save!
-
-
-      respond_to do |format|
-        format.html { redirect_to(store_index_url) }
-        format.xml  { render :xml => @line_items }
+        
+        respond_to do |format|
+          format.html { redirect_to(store_index_url) }
+          format.xml  { render :xml => @line_items }
+        end
+      else
+        respond_to do |format|
+          format.html { redirect_to(store_index_url, :notice => 'Item quantity cannot be negative') }
+          format.xml  { render :xml => @line_items }
+        end
       end
    end
   
