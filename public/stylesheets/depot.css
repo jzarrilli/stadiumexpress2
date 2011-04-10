@@ -79,6 +79,7 @@ dusty green #58A171
 
 #banner img {
   float: center;
+  width: 95%;
 }
 
 #stripe{
@@ -156,7 +157,7 @@ dusty green #58A171
   background: black;
   font-size: 20px;
   font-color: #EFE66E;
-  width: 70%;
+  width: 67.5%;
   line-height: 1.25em;
   
 }
