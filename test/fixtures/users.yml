@@ -1,4 +1,3 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 <% SALT = "NaCl" unless defined?(SALT) %>
 
 one:
