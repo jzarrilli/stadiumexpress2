@@ -351,12 +351,13 @@ margin-bottom: 10px;
 /* Styles for products/index */
 #product_list table {
   border-collapse: collapse;
-  border: 4px solid #58A171;
+  border: 4px solid white;
 }
 
 #product_list table tr td {
   padding: 5px;
-  vertical-align: top;
+  vertical-align: center;
+  text-align: center;
   line-height: 1.25em;
 }
 
@@ -392,11 +393,11 @@ margin-bottom: 10px;
 }
 
 #product_list .list_line_even {
-  background:   #e0f8f8;
+  background:  black;
 }
 
 #product_list .list_line_odd {
-  background:   #E8FFE8;
+  background:  black;
 }
 
 .confirmation{
