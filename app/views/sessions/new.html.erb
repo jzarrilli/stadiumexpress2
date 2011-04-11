@@ -1,20 +1,23 @@
 <h1>Welcome Vendor</h1>
 <div class="depot_form"> 
    <%= form_tag do %>
-	<fieldset> 
-		<!-- <legend>Please Log In</legend> -->
-		<div> 
-			<label for="name"><img src="/images/name.png"/></label>
-			<%= text_field_tag :name, params[:name] %>
-		</div>
-		<div> 
-			<label for="password"><img src="/images/password.png"/></label> 
-			<%= password_field_tag :password, params[:password] %>
-		</div>
-		<div>
-		    <%= image_submit_tag("login.png")%>
-		</div> 
-	</fieldset>
+	<div id=log>
+		<table> 
+			<tr> 
+				<td><img src="/images/name.png"/></td>
+				<td><%= text_field_tag :name, params[:name] %></td>
+			</tr> 
+			<tr> 
+				<td><img src="/images/password.png"/></td>
+				<td><%= password_field_tag :password, params[:password] %></td>
+			</tr>
+            <tr>
+	            <td></td>
+		        <td><%= image_submit_tag("login.png")%></td>
+		        <td></td>
+		    </tr>
+		</table>
+	</div>
 	<% end %> 
 </div>
 
