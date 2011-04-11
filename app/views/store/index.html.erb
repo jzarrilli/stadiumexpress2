@@ -1,22 +1,25 @@
 <% if notice %> <p id="notice"><%= notice %></p> <% end %>
 
-<div style= "width:100%;height:75px;border-bottom:1px solid white;">
+<div style= "width:95%;height:75px;border-bottom:1px solid white;">
 	<h1>Menu</h1>
 </div>
 
 <% @products.each do |product| %>
 <div class="entry"> 
 	<h3><%= product.title %></h3>
-	<%= image_tag(product.image_url, :height => '300') %>
+	<%= image_tag(product.image_url, :height => '700') %>
 	<IT><%=sanitize product.description %></IT>
 	<div id="price_line">
 		<span class="price">
 			<%= number_to_currency(product.price) %></br></br>
+			<td>
+				&nbsp
+			</td>
 		</span> 
 	</div>
-		
-	<td class="stand_lines"><%= link_to image_tag("add_to_cart.png", :border =>0), line_items_path(:product_id => product), :method => :post%></td>
-	
+	<div style= "width:95%;height:200px;border-bottom:1px solid white;">	
+		<td class="stand_lines"><%= link_to image_tag("add_to_cart.png", :border =>0, :size => '400x150'), line_items_path(:product_id => product), :method => :post%></td>
+	</div>
 	
 </div>
 <% end %>

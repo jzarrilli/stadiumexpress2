@@ -1,6 +1,7 @@
 IT{
 	font-style:italic;
 }
+
 BD{font-weight:bold;}
 
 body { background-color: #fff; color: #333; }
@@ -11,20 +12,22 @@ body, ol, ul{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 1.5em;
+  text-align: center;
 }
 
 body, td,li{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   50px;
-  line-height: 1em;	
-  text-align: left;
+  line-height: 0.75em;	
+  text-align: center;
 }
 
 
 h3{
   font-size:   50px;
-  color: black;
+  color: white;
   font-family: helvetica;
+  text-align: center;
 }
 
 
@@ -80,5 +83,7 @@ div.field, div.actions {
 }
 
 .entry{
-	color: #686868;
+	color: white;
+	padding-bottom: 20px;
+	text-align: center;
 }

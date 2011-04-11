@@ -23,7 +23,17 @@
 			
 				<div id="main">
 					<%= yield %>
-					<%= link_to image_tag("Vendor.png", :border => 0), login_path%> <br/>
+				</div>
+				
+				<div id="bottom">
+					<table>
+						<tr>
+							<%= link_to image_tag("Vendor.png", :border => 0), login_path%> <br/>
+						</tr>	
+						<tr>
+							For more information, please contact stadiumexp@gmail.com <br/>
+						</tr>
+					</table>
 				</div>
 			<% end %>
 		

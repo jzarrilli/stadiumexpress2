@@ -24,6 +24,10 @@ dusty green #58A171
 	display: inline;
 }
 
+#store .entry {
+	text-align: center;
+	font-color: white;
+}
 
 #store #notice {
         color: #000;
@@ -39,12 +43,14 @@ dusty green #58A171
     	font: Tahoma, sans-serif;
 		font-size: 45px;
 		font-style: italic;
-        color: #EBEBEB;
+        color: white;
 		line-height: 1.5em;
+		text-align: left;
 }
 
 #store h2{
 	font-size: 40px;
+	font-color: white;
 }
 
 /*venue and stand double space*/
@@ -146,11 +152,21 @@ dusty green #58A171
 #main {
   padding-left: 5%; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
   padding-top: .02em;
-  padding-bottom:5em;
+  padding-bottom: 10px;
   background: black;
   width: 95%; /*1175px goog*/
 }
 
+#bottom {
+  padding-top: .02em;
+  padding-bottom: 30px;
+  background: black;
+  width: 99.9%; /*1175px goog*/
+  text-align: center;
+  font-color: white;
+  font-size: 20px;
+  font-style: italic;
+}
 
 
 #main2 {
