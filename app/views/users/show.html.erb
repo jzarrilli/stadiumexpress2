@@ -1,19 +1,23 @@
 
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
+<table>
+	<tr>
+ 	 <td><img src="/images/name.png"/></td>
+	 <td><%= @user.name %></td>
+    </tr>
+</table>
 
-<p>
-  <b>Hashed password:</b>
-  <%= @user.hashed_password %>
-</p>
+<table>
+	<tr>
+ 	 <td><img src="/images/password.png"/></td>
+	 <td><%= @user.hashed_password %></td>
+    </tr>
+</table>
 
-<p>
+<!-- <p>
   <b>Salt:</b>
   <%= @user.salt %>
-</p>
+</p> -->
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to image_tag("edit.png"), edit_user_path(@user) %>
+<%= link_to image_tag("back.png"), users_path %>
