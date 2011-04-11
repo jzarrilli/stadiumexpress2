@@ -68,7 +68,7 @@ dusty green #58A171
 /* Styles for main page */
 
 #banner {
-  font: Tahoma, sans-serif;
+  font: Tahoma;
   background: black;
   padding-top: 30px;
   padding-bottom: 0px;
@@ -329,14 +329,14 @@ margin-bottom: 10px;
 
 /* Styles for products/index */
 #product_list table {
-        border-collapse: collapse;
-		border: 4px solid #58A171;
+  border-collapse: collapse;
+  border: 4px solid #58A171;
 }
 
 #product_list table tr td {
-        padding: 5px;
-        vertical-align: top;
-		line-height: 1.25em;
+  padding: 5px;
+  vertical-align: top;
+  line-height: 1.25em;
 }
 
 #product_list .list_image {
