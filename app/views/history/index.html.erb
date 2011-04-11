@@ -21,7 +21,7 @@
 	    <td><%= line_item.product.title %></td>
 		<td><%= line_item.quantity %></td>
 		<td><%= number_to_currency(line_item.total_price) %></td>	
-	    <td><%= link_to image_tag("details.png", :border => 0), order_path(line_item.order) %></td>
+	    <td><%= link_to image_tag("details.png", :border => 0), history_show_path(line_item) %></td>
 	  </tr>
 	<% end %>
 	</table>

@@ -1,0 +1,48 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div id="form">
+	<div>
+		<table class="confirmation">
+			<tr>
+				<td><img src="/images/name.png"></td>
+				<td><%= @order.name %></td>
+			</tr>
+			<tr>
+				<td><img src="/images/seat.png"></td>
+				<td><%= @order.address %></td>
+			</tr>
+			<tr>
+				<td><img src="/images/email.png"></td>
+				<td><%= @order.email %></td>
+			</tr>
+			<tr>
+				<td><img src="/images/paytype.png"></td>
+				<td><%= @order.pay_type %></td>
+			</tr>
+			<tr>
+				<td><img src="/images/total.png"></td>
+				<td><%= number_to_currency(@order.total_price) %></BD>
+			</tr>
+			<tr>
+				<td><img src="/images/time.png"></td>
+				<td><%= @order.time.strftime('%d/%m/%y | %R') %></BD>
+			</tr>
+			<tr>
+			    <td><%= link_to image_tag("confirm.png", :border =>0), confirm_order_path(@order), :method => :post%></td>
+				<td><%= link_to image_tag("edit_details.png", :border =>0),edit_order_path(@order) , :method => :post%></td>	
+			</tr>	
+		</table>
+	<% end %>
+</div>	

@@ -1,0 +1,27 @@
+<table class="confirmation">
+	<tr>
+		<td><img src="/images/name.png"></td>
+		<td><%= line_item.order.name %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/seat.png"></td>
+		<td><%= @line_item.order.address %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/email.png"></td>
+		<td><%= @line_item.order.email %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/paytype.png"></td>
+		<td><%= @line_item.order.pay_type %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/total.png"></td>
+		<td><%= number_to_currency(@line_item.order.total_price) %></BD>
+	</tr>
+	<tr>
+		<td><img src="/images/time.png"></td>
+		<td><%= @line_item.order.time.strftime('%d/%m/%y | %R') %></BD>
+	</tr>
+	<tr>
+</table>

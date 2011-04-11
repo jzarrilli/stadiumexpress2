@@ -11,7 +11,9 @@ Depot::Application.routes.draw do
 
   resources :stands
   
-  resources :history
+  resources :history do
+    get 'show'
+  end
 
   get 'admin' => 'admin#index'
 
