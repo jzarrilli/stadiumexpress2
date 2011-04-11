@@ -1,3 +1,9 @@
+<table>
+	<tr></tr>
+	<tr></tr>
+	<tr></tr>
+</table>
+
 <h1>Listing users</h1>
 
 <!-- <p id="notice"><%= notice %></p> -->
@@ -13,15 +19,13 @@
 <% @users.each do |user| %>
   <tr>
     <td><%= user.name %></td>
-    <!-- <td><%= user.hashed_password %></td>
-        <td><%= user.salt %></td> -->
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to image_tag("show.png", :border => 0), user %></td>
+    <td><%= link_to image_tag("edit.png", :border => 0), edit_user_path(user) %></td>
+    <td><%= link_to image_tag("destroy.png", :border => 0), user, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to image_tag("newuser.png", :border => 0), new_user_path %>

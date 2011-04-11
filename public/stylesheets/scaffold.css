@@ -50,6 +50,7 @@ div.field, div.actions {
 
 #notice {
   color: blue;
+  text-align: center;
 }
 
 .field_with_errors {

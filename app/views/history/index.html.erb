@@ -1,25 +1,30 @@
+<table>
+	<tr></tr>
+	<tr></tr>
+	<tr></tr>
+</table>
+
 <h1>History</h1>
 
-<table>
-  <tr>
-    <th>Name</th>    <th>&nbsp</th>
-	<th>Product</th>    <th>&nbsp</th>
-    <th>Quantity</th><th>&nbsp</th>
-    <th>Price</th><th>&nbsp</th>
+<div id="history">
+	<table>
+	  <tr>
+	    <th>Name</th>    <th>&nbsp</th>
+		<th>Product</th>    <th>&nbsp</th>
+	    <th>Quantity</th><th>&nbsp</th>
+	    <th>Price</th><th>&nbsp</th>
+	  </tr>
 
-
-  </tr>
-
-<% @line_items.each do |line_item| %>
-  <tr>
-	<td><%= line_item.order.name %></td><td>&nbsp</td>
-    <td><%= line_item.product.title %></td><td>&nbsp</td>
-	<td><%= line_item.quantity %></td><td>&nbsp</td>
-	<td><%= number_to_currency(line_item.total_price) %></td><td>&nbsp</td>	
-    <td><%= link_to 'Details', order_path(line_item.order) %></td>
-
-  </tr>
-<% end %>
-</table>
+      <% @line_items.each do |line_item| %>
+	  <tr>
+		<td><%= line_item.order.name %></td><td>&nbsp</td>
+	    <td><%= line_item.product.title %></td><td>&nbsp</td>
+		<td><%= line_item.quantity %></td><td>&nbsp</td>
+		<td><%= number_to_currency(line_item.total_price) %></td><td>&nbsp</td>	
+	    <td><%= link_to image_tag("details.png", :border => 0), order_path(line_item.order) %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>
 
 <br />
