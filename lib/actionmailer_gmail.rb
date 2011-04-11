@@ -3,6 +3,6 @@ ActionMailer::Base.smtp_settings = {
 	:port => 587,
 	:authentication => :plain,
 	:domain => ENV['stadiumexpress.heroku.com'],
-	:user_name => ENV['osibodu@gmail.com'],
-	:password => ENV['Cesc4Fab'],
+	:user_name => ENV['stadiumexp@gmail.com'],
+	:password => ENV['stadium10'],
 }
