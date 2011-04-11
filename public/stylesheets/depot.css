@@ -110,14 +110,17 @@ dusty green #58A171
 #cart, #cart table { 
 	font-size: smaller; 
 	background: black;
+	padding-left: .5em;
 }
 
 #cart table { 
 	border-top: 3px;
 	border-bottom: 3px;
 	margin-bottom: 10px;
-	background: #383838;
+	background: black;
 	float: center;
+	padding-left:2em;
+	width: 90%
 }
 
 #cart .cart_title{
@@ -126,6 +129,9 @@ dusty green #58A171
 	font-style: italic;
 	background: black;
 	font-size:24px;
+	padding-top: 1em;
+	padding-bottom: .5em;
+	border-bottom: 1px solid white;
 }
 
 #cart .total_line tr{
@@ -133,7 +139,7 @@ dusty green #58A171
   font-size: 24px;
   font-style: italic;
   line-height: 1em;
-  background: #383838;
+  background: black;
 }
 
 #cart .total_cell td{
@@ -141,7 +147,7 @@ dusty green #58A171
   font-style: italic;
   line-height: 1em;
   font-weight:bold;
-  background: #383838;
+  background: black;
 }
 
 /*#columns {
@@ -262,7 +268,9 @@ text-align:center;
 	text-align:left;
 }
 
-
+#cart table .tot td{
+	font-style:italic;
+}
 
 
 /* Styles for the cart in the sidebar */
@@ -293,7 +301,7 @@ background-color:black;
 
 #cart table {
 /*border-top: 3px dotted Midnightblue;
-*/border-bottom: 3px dotted #686868;
+*/border-bottom: 0 dotted black;
 margin-bottom: 10px;
 }*/
 
