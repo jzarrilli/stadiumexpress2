@@ -91,7 +91,7 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
     
     @order.line_items.each do |line_item|
-      line_item.status = LineItem::VERFIIED
+      line_item.status = LineItem::VERIFIED
       line_item.save!
     end
     
