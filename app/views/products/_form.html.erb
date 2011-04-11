@@ -7,22 +7,38 @@
 		</div> 
 	<% end %>
 	
-	<div class="field"> 
-		<%= f.label :title %><br /> <%= f.text_field :title %>
-	</div> 
 	
-	<div class="field">
-		<%= f.label :description %><br />
-		<%= f.text_area :description, :rows => 6 %>
-	</div> 
-	<div class="field">
-		<%= f.label :image_url %><br />
-		<%= f.text_field :image_url %>
-	</div> <div class="field">
-		<%= f.label :price %><br />
-		<%= f.text_field :price %>
-	</div> <div class="actions">
-		<%= image_submit_tag("createproduct.png")%>
-	</div> 
-	<% end %>
+	<div>
+		<div>
+			<table>
+				<tr>
+					<td><img src="/images/title2.png"></td>
+					<td><%= f.text_field :title %></td>
+				</tr>
+				<tr>
+					<td><img src="/images/description2.png"></td>
+					<td><%= f.text_area :description, :rows => 6 %></td>
+				</tr>
+				<tr>
+					<td><img src="/images/imageurl2.png"></td>
+					<td><%= f.text_field :image_url %></td>
+				</tr>
+				<tr>
+					<td><img src="/images/price2.png"></td>
+					<td><%= f.text_field :price %></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><%= image_submit_tag("createproduct.png")%></td>
+				</tr>
+			</table>
+
+		<% end %>
+	</div>
+	
+	
+	
+	
+
 	
