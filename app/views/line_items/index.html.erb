@@ -1,3 +1,9 @@
+<table>
+	<tr></tr>
+	<tr></tr>
+	<tr></tr>
+</table>
+
 <h1>Items in Queue</h1>
 
 <table>
@@ -17,9 +23,9 @@
 	<td><%= line_item.status %></td><td>&nbsp</td>
 	
     <!-- <td><%= link_to 'Show', line_item %></td> -->
-    <td><%= link_to 'Edit', edit_line_item_path(line_item) %></td>
-    <td><%= link_to 'Fill', fill_line_item_path(line_item), :method => :post %></td>
-    <td><%= link_to 'Archive', archive_line_item_path(line_item), :method => :post %></td>
+    <td><%= link_to image_tag("edit.png", :border => 0), edit_line_item_path(line_item) %></td>
+    <td><%= link_to image_tag("fill.png", :border => 0), fill_line_item_path(line_item), :method => :post %></td>
+    <td><%= link_to image_tag("archive.png", :border => 0), archive_line_item_path(line_item), :method => :post %></td>
 
   </tr>
 <% end %>
