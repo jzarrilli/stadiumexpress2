@@ -12,15 +12,7 @@
 
 <% @products.each do |product| %>
 <div class="entry"> 
-	
-<!-- 	<table>
-		<tr><%= product.title %></tr>
-		<tr><%= image_tag(product.image_url, :height => '700') %></tr>
-		<tr><IT><%=sanitize product.description %></IT></tr>
-		<tr><%= number_to_currency(product.price) %></tr>
-		<tr class="stand_lines"><%= link_to image_tag("add_to_cart.png", :border =>0, :size => '400x150'), line_items_path(:product_id => product), :method => :post%></tr>
-	</table> -->
-	
+
 	
 	
 	<h3><%= product.title %></h3>	

@@ -30,11 +30,11 @@ dusty green #58A171
 }
 
 #store #notice {
-        color: #000;
+        color: white;
         border: 2px solid red;
         padding: 1em;
         margin-bottom: 2em;
-        background-color: #f0f0f0;
+        background-color: black;
         font: bold smaller sans-serif;
 }
 

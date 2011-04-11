@@ -4,7 +4,7 @@ IT{
 
 BD{font-weight:bold;}
 
-body { background-color: white; 
+body { background-color: black; 
 	color: white; 
 }
 
@@ -51,6 +51,7 @@ div.field, div.actions {
 #notice {
   color: blue;
   text-align: center;
+  background-color:black;
 }
 
 .field_with_errors {
@@ -89,4 +90,5 @@ div.field, div.actions {
 	color: white;
 	padding-bottom: 20px;
 	text-align: center;
+	background-color:black;
 }

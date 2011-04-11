@@ -59,7 +59,7 @@ class OrdersController < ApplicationController
         session[:cart_id] = nil
         Notifier.order_received(@order).deliver
         format.html { redirect_to(@order, :notice =>
-        'Thank you for your order.') }
+        'Please confirm order.') }
         format.xml { render :xml => @order, :status => :created,
         :location => @order }
       else
