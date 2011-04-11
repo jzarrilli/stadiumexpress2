@@ -111,8 +111,8 @@ dusty green #58A171
 #cart, #cart table { 
 	font-size: smaller; 
 	background: black;
-	padding-left: .5em;
-}
+/*	padding-left: .5em;
+*/}
 
 #cart table { 
 	border-top: 3px;
@@ -133,6 +133,7 @@ dusty green #58A171
 	padding-top: 1em;
 	padding-bottom: .5em;
 	border-bottom: 1px solid white;
+	width: 95%
 }
 
 #cart .total_line tr{
@@ -287,6 +288,8 @@ background-color:black;
   font-style: italic;
   line-height: 1em;
   color: #253B78;
+
+
 }
 #cart .total_cell td{
   font-size: 40px;
@@ -294,13 +297,14 @@ background-color:black;
   font-style: italic;
   line-height: 1em;
   font-weight:bold;
+
 }
 
 
 
 #cart table {
 /*border-top: 3px dotted Midnightblue;
-*/border-bottom: 0 dotted black;
+*/border-bottom: 0 dotted white;
 margin-bottom: 10px;
 }*/
 
