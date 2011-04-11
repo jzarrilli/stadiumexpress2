@@ -10,18 +10,17 @@
 <div id="history">
 	<table>
 	  <tr>
-	    <th>Name</th>    <th>&nbsp</th>
-		<th>Product</th>    <th>&nbsp</th>
-	    <th>Quantity</th><th>&nbsp</th>
-	    <th>Price</th><th>&nbsp</th>
+		<td><img src="/images/name2.png"></td>
+		<td><img src="/images/product2.png"></td>
+		<td><img src="/images/quantity2.png"></td>
+		<td><img src="/images/price2.png"></td>
 	  </tr>
-
       <% @line_items.each do |line_item| %>
 	  <tr>
-		<td><%= line_item.order.name %></td><td>&nbsp</td>
-	    <td><%= line_item.product.title %></td><td>&nbsp</td>
-		<td><%= line_item.quantity %></td><td>&nbsp</td>
-		<td><%= number_to_currency(line_item.total_price) %></td><td>&nbsp</td>	
+		<td><%= line_item.order.name %></td>
+	    <td><%= line_item.product.title %></td>
+		<td><%= line_item.quantity %></td>
+		<td><%= number_to_currency(line_item.total_price) %></td>	
 	    <td><%= link_to image_tag("details.png", :border => 0), order_path(line_item.order) %></td>
 	  </tr>
 	<% end %>
