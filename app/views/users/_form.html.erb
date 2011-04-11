@@ -13,8 +13,32 @@
     </div>
   <% end %>
 
-<fieldset>
-	<legend>Enter User Details</legend>
+
+	<table>
+		<tr>
+			<td><img src="/images/name.png"></td>
+			<td><%= f.text_field :name, :size => 40 %></td>
+		</tr>
+		<tr>
+			<td><img src="/images/password.png"></td>
+			<td><%= f.password_field :password, :size => 40 %></td>
+		</tr>
+		<tr>
+			<td><img src="/images/confirm2.png"></td>
+			<td><%= f.password_field :password_confirmation, :size => 40 %></td>
+		</tr>
+	</table>
+	
+	<table>
+		<tr>
+			<td><%= image_submit_tag("createuser.png") %></td>
+			<td><%= link_to image_tag("back.png", :border => 0), users_path %></td>
+		</tr>
+	</table>
+	
+
+
+<!-- <fieldset>
 
   <div>
     <%= f.label :name %>:
@@ -31,6 +55,7 @@
   <div>
     <%= image_submit_tag("createuser.png") %>
   </div>
-</fieldset>
+</fieldset> -->
+
 <% end %>
 </div>
