@@ -122,8 +122,9 @@ dusty green #58A171
 
 #cart .cart_title{
 	font-weight: bold;
-	color: Powderblue;
-	background: #383838;
+	color: white;
+	font-style: italic;
+	background: black;
 	font-size:24px;
 }
 
@@ -270,6 +271,7 @@ font-size: 40px;
 color: white;
 width: 100%;
 text-align: left;
+background-color:black;
 }
 
 #main .total_line td{
@@ -287,10 +289,7 @@ text-align: left;
   font-weight:bold;
 }
 
-#cart .cart_title{
-	font-weight: bold;
-	color: Powderblue;
-}
+
 
 #cart table {
 /*border-top: 3px dotted Midnightblue;
