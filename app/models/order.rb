@@ -2,9 +2,10 @@ class Order < ActiveRecord::Base
   belongs_to :cart
   belongs_to :line_item
   belongs_to :product
+  belongs_to :credit 
   
   has_many :line_items, :dependent => :destroy
-  PAYMENT_TYPES = [ "Cash", "Check", "Credit card", "PayPal" ]
+  PAYMENT_TYPES = [ "Cash", "Credit"]
   
   validates :name, :address, :email, :pay_type, :presence => true
   validates :pay_type, :inclusion => PAYMENT_TYPES

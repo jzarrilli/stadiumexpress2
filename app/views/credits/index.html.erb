@@ -1,0 +1,35 @@
+<h1>Listing credits</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Number</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Expiration</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @credits.each do |credit| %>
+  <tr>
+    <td><%= credit.name %></td>
+    <td><%= credit.number %></td>
+    <td><%= credit.address %></td>
+    <td><%= credit.city %></td>
+    <td><%= credit.state %></td>
+    <td><%= credit.zip %></td>
+    <td><%= credit.expiration %></td>
+    <td><%= link_to 'Show', credit %></td>
+    <td><%= link_to 'Edit', edit_credit_path(credit) %></td>
+    <td><%= link_to 'Destroy', credit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Credit', new_credit_path %>
