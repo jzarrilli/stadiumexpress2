@@ -109,7 +109,7 @@ dusty green #58A171
 /* Styles for the cart in the stripe */
 #cart, #cart table { 
 	font-size: smaller; 
-	background: #383838;
+	background: black;
 }
 
 #cart table { 
@@ -423,8 +423,8 @@ margin-bottom: 10px;
 		
 .cart_items{
 	background:#EBF1FF;
-	border: 0px solid #383838;
-	padding-left: .5em;
+/*	border: 0px solid #383838;
+*/	padding-left: .5em;
 	padding-right: 1em;
 	text-align:left;
 }
