@@ -37,7 +37,7 @@ dusty green #58A171
 
 #store h1 {
     	font: Tahoma, sans-serif;
-		font-size: 65px;
+		font-size: 45px;
         color: #EFE66E;
 		line-height: 1.5em;
 }
@@ -47,6 +47,7 @@ dusty green #58A171
 }
 
 /*venue and stand double space*/
+
 #store table tr td{
 	line-height: 1.5em;
 }
@@ -59,6 +60,7 @@ dusty green #58A171
 	line-height: 1.5em;
 	width: 20%;
 	font-weight: bold;
+	
 }
 
 /* START:mainlayout */
@@ -74,13 +76,14 @@ dusty green #58A171
   text-align: center;
   font-size: 0px;
   width: 99.99%;
-
 }
 
 #banner img {
   float: center;
   width: 95%;
-}
+/*  border-color: #F1F0FF;
+*/}
+
 
 #stripe{
 	background: black;
@@ -88,7 +91,7 @@ dusty green #58A171
 	vertical-align: top;
 /*	padding-top:0px;
 */	padding-right: 30px ;
-	border-bottom:0em solid #EEAA77;
+	border-bottom:0em solid white;
 /*	border: 5px solid #383838;
 */	font-size:20px;
 	line-height: 2em;
@@ -145,7 +148,6 @@ dusty green #58A171
   padding-bottom:5em;
   background: black;
   width: 95%; /*1175px goog*/
-  
 }
 
 
