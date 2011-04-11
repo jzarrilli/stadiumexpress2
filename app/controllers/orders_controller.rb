@@ -92,6 +92,8 @@ class OrdersController < ApplicationController
       line_item.status = LineItem::VERFIIED
       line_item.save!
     end
+    
+      redirect_to(thanks_url) 
   end
   
   def destroy
