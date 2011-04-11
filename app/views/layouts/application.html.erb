@@ -16,7 +16,7 @@
 			<% if !session[:user_id] %>		
 		
 				<div id="stripe">
-					<%= link_to "Vendor Login", login_path%> <br/>
+					<%= link_to image_tag("Vendor.png", :border => 0), login_path%> <br/>
 					<div id="cart">
 						<%= render current_cart unless @hide_cart%>
 					</div>
