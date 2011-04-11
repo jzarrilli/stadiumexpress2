@@ -14,6 +14,8 @@ class CreditsController < ApplicationController
   # GET /credits/1.xml
   def show
     @credit = Credit.find(params[:id])
+    @hide_cart = true
+    
 
     respond_to do |format|
       format.html # show.html.erb
@@ -42,6 +44,8 @@ class CreditsController < ApplicationController
   # POST /credits.xml
   def create
     @credit = Credit.new(params[:credit])
+    @hide_cart = true
+    
 
     respond_to do |format|
       if @credit.save
@@ -58,6 +62,8 @@ class CreditsController < ApplicationController
   # PUT /credits/1.xml
   def update
     @credit = Credit.find(params[:id])
+    @hide_cart = true
+    
 
     respond_to do |format|
       if @credit.update_attributes(params[:credit])
