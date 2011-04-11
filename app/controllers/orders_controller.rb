@@ -95,7 +95,11 @@ class OrdersController < ApplicationController
       line_item.save!
     end
     
-      redirect_to(thanks_url) 
+    # respond_to do |format|
+      redirect_to(thanks_url)
+      # format.xml  { render :xml => @order }
+    # end 
+      
   end
   
   def destroy
