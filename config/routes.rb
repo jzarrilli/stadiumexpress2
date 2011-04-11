@@ -7,11 +7,15 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
+  resources :credits
+
   resources :venues
 
   resources :stands
   
-  resources :history
+  resources :history do
+    get 'show'
+  end
 
   get 'admin' => 'admin#index'
 
@@ -26,6 +30,7 @@ Depot::Application.routes.draw do
 
   resources :orders do 
     post 'confirm', :on => :member
+    post 'card', :on => :member
   end
 
 

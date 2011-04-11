@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @credit.name %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @credit.number %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @credit.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @credit.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @credit.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @credit.zip %>
+</p>
+
+<p>
+  <b>Expiration:</b>
+  <%= @credit.expiration %>
+</p>
+
+
+<%= link_to 'Edit', edit_credit_path(@credit) %> |
+<%= link_to 'Complete Order', confirm_order_path, :method => :post %>

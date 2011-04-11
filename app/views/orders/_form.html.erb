@@ -13,27 +13,31 @@
 
 <div id="form">
 	<div>
-	  <%= f.label :name, "Name:" %>
-	  <%= f.text_field :name, :size => 40%></br>
-	  </div>
-  
-	  <div>
-	  	    <%= f.label :address, "Seat Number:" %>
-	  	    <%= f.text_field :address, :size =>40 %></br>
-	  	  </div>
-  
-	  <div>
-	    <%= f.label :email, "E-Mail:" %>
-	    <%= f.email_field :email, :size => 40 %></br>
-	  </div>
-  
-	  <div>
-	    <%= f.label :pay_type, "Pay with:" %>
-	    <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %>
-	  </div>
-  
-  
-	  <!--<%= f.submit "Place Order"%>-->
-         </br> <%= image_submit_tag('/images/placeorder.png')%>
+		<table>
+			<tr>
+				<td><img src="/images/name.png"></td>
+				<td><%= f.text_area :name, :rows => 4%></td>
+			</tr>
+			<tr>
+				<td><img src="/images/seatnumber.png"></td>
+				<td><%= f.text_area :address, :rows => 4 %></td>
+			</tr>
+			<tr>
+				<td><img src="/images/email.png"></td>
+				<td><%= f.email_field :email, :size => 40 %></td>
+			</tr>
+			<!-- <tr>
+				<td><img src="/images/paywith.png"></td>
+				<td><%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %></td>
+			</tr> -->
+		</table>
+		<table>
+			<tr>
+				<td><%= image_submit_tag('/images/placeorder.png')%></td>
+			</tr>
+		</table>
+
 	<% end %>
 </div>
+
+

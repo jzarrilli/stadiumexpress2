@@ -7,22 +7,40 @@
 		</div> 
 	<% end %>
 	
-	<div class="field"> 
-		<%= f.label :title %><br /> <%= f.text_field :title %>
-	</div> 
 	
-	<div class="field">
-		<%= f.label :description %><br />
-		<%= f.text_area :description, :rows => 6 %>
-	</div> 
-	<div class="field">
-		<%= f.label :image_url %><br />
-		<%= f.text_field :image_url %>
-	</div> <div class="field">
-		<%= f.label :price %><br />
-		<%= f.text_field :price %>
-	</div> <div class="actions">
-		<%= image_submit_tag("createproduct.png")%>
-	</div> 
-	<% end %>
+	<div>
+		<div>
+			<table>
+				<tr>
+					<td><img src="/images/title2.png"></td>
+					<td><%= f.text_area :title, :rows => 4 %></td>
+				</tr>
+				<tr>
+					<td><img src="/images/description2.png"></td>
+					<td><%= f.text_area :description, :rows => 4%></td>
+				</tr>
+				<tr>
+					<td><img src="/images/imageurl2.png"></td>
+					<td><%= f.text_area :image_url , :rows => 4%></td>
+				</tr>
+				<tr>
+					<td><img src="/images/price2.png"></td>
+					<td><%= f.text_area :price , :rows => 3%></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><%= image_submit_tag("createproduct.png")%></td>
+					<td><%= link_to image_tag("show.png"), @product %></td>
+					<td><%= link_to image_tag("back.png"), products_path %></td>
+				</tr>
+			</table>
+
+		<% end %>
+	</div>
+	
+	
+	
+	
+
 	

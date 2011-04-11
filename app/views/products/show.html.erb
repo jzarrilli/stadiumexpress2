@@ -6,26 +6,34 @@
 	<tr></tr>
 </table>
 
-<p>
-  <b>Title:</b>
-  <%= @product.title %>
-</p>
+<h1>Product Details:</h1>
 
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
+<table>
+	<tr>
+		<td><img src="/images/title2.png"></td>
+		<td><%= @product.title %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/description2.png"></td>
+		<td><%= @product.description %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/imageurl2.png"></td>
+		<td><%= @product.image_url %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/price2.png"></td>
+		<td><%= @product.price %></td>
+	</tr>
+</table>
 
-<p>
-  <b>Image url:</b>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
+<table>
+	<tr>
+		<td><%= link_to image_tag("edit.png"), edit_product_path(@product) %></td>
+		<td><%= link_to image_tag("back.png"), products_path %></td>
+	</tr>
+</table>
 
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+ 
+

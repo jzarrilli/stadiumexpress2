@@ -8,11 +8,10 @@
 
 <table>
   <tr>
-    <th>Name</th>    <th>&nbsp</th>
-	<th>Product</th>    <th>&nbsp</th>
-    <th>Quantity</th><th>&nbsp</th>
-    <th>Status</th>
-
+	<td><img src="/images/name2.png"></td>
+	<td><img src="/images/product2.png"></td>
+	<td><img src="/images/quantity2.png"></td>
+	<td><img src="/images/status2.png"></td>
   </tr>
 
 <% @line_items.each do |line_item| %>
@@ -23,7 +22,7 @@
 	<td><%= line_item.status %></td><td>&nbsp</td>
 	
     <!-- <td><%= link_to 'Show', line_item %></td> -->
-    <td><%= link_to image_tag("edit.png", :border => 0), edit_line_item_path(line_item) %></td>
+    <!-- <td><%= link_to image_tag("edit.png", :border => 0), edit_line_item_path(line_item) %></td> -->
     <td><%= link_to image_tag("fill.png", :border => 0), fill_line_item_path(line_item), :method => :post %></td>
     <td><%= link_to image_tag("archive.png", :border => 0), archive_line_item_path(line_item), :method => :post %></td>
 

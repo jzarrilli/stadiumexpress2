@@ -7,21 +7,36 @@
 <h1>Order Details</h1>
 
 <table class="confirmation">
-	<tr><td><BD>Name:</BD></td><td><%= @order.name %></td></tr>
-	<tr><td><BD>Seat:</BD></td><td><%= @order.address %></td></tr>
-	<tr><td><BD>Email:</BD></td><td><%= @order.email %></td></tr>
-	<tr><td><BD>Pay Type:</BD></td><td><%= @order.pay_type %></td></tr>
-	<tr><td><BD>Total:</td><td><%= number_to_currency(@order.total_price) %></BD><tr>
-	<tr><td><BD>Time:</td><td><%= @order.time.strftime('%d/%m/%y | %R') %></BD><tr>
-
-	
-	<p>
-
+	<tr>
+		<td><img src="/images/name.png"></td>
+		<td><%= @order.name %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/seat.png"></td>
+		<td><%= @order.address %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/email.png"></td>
+		<td><%= @order.email %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/paytype.png"></td>
+		<td><%= @order.pay_type %></td>
+	</tr>
+	<tr>
+		<td><img src="/images/total.png"></td>
+		<td><%= number_to_currency(@order.total_price) %></BD>
+	</tr>
+	<tr>
+		<td><img src="/images/time.png"></td>
+		<td><%= @order.time.strftime('%d/%m/%y | %R') %></BD>
+	</tr>
+	<tr>
+	    <td><%= link_to image_tag("confirm.png", :border =>0), confirm_order_path(@order), :method => :post%></td>
+		<td><%= link_to image_tag("edit_details.png", :border =>0),edit_order_path(@order) , :method => :post%></td>	
+	</tr>	
 </table>	
 	
-</br>
-
-	<td><%= link_to image_tag("confirm.png", :border =>0), confirm_order_path(@order), :method => :post%></td>
-	<td><%= link_to image_tag("edit_details.png", :border =>0),edit_order_path(@order) , :method => :post%></td>
+	
 
 
