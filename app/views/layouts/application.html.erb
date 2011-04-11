@@ -43,16 +43,16 @@
 					<div id="cart">
 						<%= render current_cart unless @hide_cart %>
 					</div>
-				</div>
-				
-				<div id="side2"> 
-					<%= link_to "User Home", root_path%> <br/>
-
-					<%= link_to 'Orders',	line_items_path	%><br />
-					<%= link_to 'Products', products_path %><br />
-					<%= link_to "History", history_index_path %> <br/>
-					<%= link_to 'Users',	users_path	%><br />
-					<%= button_to 'Logout', logout_path, :method => :delete	%>
+					<table>
+						<tr>
+							<td> <%= link_to image_tag("UserHome.png", :border => 0), root_path%> </td>
+							<td> <%= link_to image_tag("orders.png", :border => 0),	line_items_path	%> </td>
+							<td> <%= link_to image_tag("products.png", :border => 0), products_path %> </td>
+							<td> <%= link_to image_tag("history.png", :border => 0), history_index_path %> </td>
+							<td> <%= link_to image_tag("users.png", :border => 0),	users_path	%> </td>
+							<td> <%= button_to 'Logout', logout_path, :method => :delete%> </td>
+						</tr>
+					</table>
 
 				</div> 
 				
