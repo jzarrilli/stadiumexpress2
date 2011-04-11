@@ -34,6 +34,7 @@ class OrdersController < ApplicationController
     end
 
     @order = Order.new
+    @hide_cart = true
 
     respond_to do |format|
       format.html # new.html.erb
@@ -88,6 +89,7 @@ class OrdersController < ApplicationController
   # DELETE /orders/1.xml
   def confirm
     @order = Order.find(params[:id])
+    
     @order.line_items.each do |line_item|
       line_item.status = LineItem::VERFIIED
       line_item.save!
