@@ -26,7 +26,7 @@
 		<td><%= line_item.quantity %></td><td>&nbsp</td>
 		<td><%= number_to_currency(line_item.total_price) %></td><td>&nbsp</td>	
 		<td><%= line_item.order.pay_type %></td><td>&nbsp</td>
-		<td><%= line_item.order.time.strftime('%d/%m/%y | %R') %></BD>		
+		<td><%= line_item.order.time.strftime('%d/%m/%y | %R') %></td>		
 	  </tr>
 	<% end %>
 	</table>

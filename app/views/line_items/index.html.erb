@@ -12,6 +12,8 @@
 	<td><img src="/images/product2.png"></td><td>&nbsp</td>
 	<td><img src="/images/quantity2.png"></td><td>&nbsp</td>
 	<td><img src="/images/status2.png"></td><td>&nbsp</td>
+	<td><img src="/images/time2.png"></td>
+	
   </tr>
 
 <% @line_items.each do |line_item| %>
@@ -20,6 +22,8 @@
     <td><%= line_item.product.title %></td><td>&nbsp</td>
 	<td><%= line_item.quantity %></td><td>&nbsp</td>
 	<td><%= line_item.status %></td><td>&nbsp</td>
+	<td><%= line_item.order.time.strftime('%d/%m/%y | %R') %></td><td>&nbsp</td>		
+	
 	
     <!-- <td><%= link_to 'Show', line_item %></td> -->
     <!-- <td><%= link_to image_tag("edit.png", :border => 0), edit_line_item_path(line_item) %></td> -->
