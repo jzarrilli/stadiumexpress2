@@ -11,17 +11,22 @@
 	<table>
 	  <tr>
 		<td><img src="/images/name2.png"></td>
+		<td><img src="/images/email2.png"></td>
 		<td><img src="/images/product2.png"></td>
 		<td><img src="/images/quantity2.png"></td>
-		<td><img src="/images/price2.png"></td>
+		<td><img src="/images/total2.png"></td>
+		<td><img src="/images/paytype2.png"></td>
+		<td><img src="/images/time2.png"></td>
 	  </tr>
       <% @line_items.each do |line_item| %>
 	  <tr>
 		<td><%= line_item.order.name %></td>
+		<td><%= line_item.order.email %></td>		
 	    <td><%= line_item.product.title %></td>
 		<td><%= line_item.quantity %></td>
 		<td><%= number_to_currency(line_item.total_price) %></td>	
-	    <td><%= link_to image_tag("details.png", :border => 0), history_show_path(line_item) %></td>
+		<td><%= line_item.order.pay_type %></td>
+		<td><%= line_item.order.time.strftime('%d/%m/%y | %R') %></BD>		
 	  </tr>
 	<% end %>
 	</table>
