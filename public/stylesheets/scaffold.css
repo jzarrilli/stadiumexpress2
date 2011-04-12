@@ -41,14 +41,14 @@ div.field, div.actions {
 }
 
 #notice {
-  color: blue;
+  color: white;
   text-align: center;
   background-color:black;
 }
 
 .field_with_errors {
   padding: 2px;
-  background-color: #FFE0E3;
+  background-color: black;
   border: 2px solid red;
   display: table;
 }
@@ -59,7 +59,7 @@ div.field, div.actions {
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #EBEBEB;
+  background-color: black;
 }
 
 #error_explanation h2 {
@@ -69,7 +69,7 @@ div.field, div.actions {
   font-size: 12px;
   margin: -7px;
   margin-bottom: 0px;
-  background-color: #FFE0E3;
+  background-color: black;
   color: white;
 }
 

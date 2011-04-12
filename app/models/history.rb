@@ -6,10 +6,10 @@ class History < ActiveRecord::Base
   has_many :orders, :through => :line_items
    #  
    # validates :product_id, :presence => true
-   # validates :cart_id, :presence => true,
+   # validates :cart_id, :presence => true
    # validates :name , :presence => true
-   # validates :address , :presence => true, 
-   # validates :email, :presence => true, 
+   # validates :address , :presence => true
+   # validates :email, :presence => true
    # validates :pay_type, :presence => true
 
   
