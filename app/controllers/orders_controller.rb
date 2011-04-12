@@ -59,10 +59,9 @@ class OrdersController < ApplicationController
         session[:cart_id] = nil
         format.html { redirect_to(@order, :notice =>
         'Please confirm order.') }
-        Notifier.order_received(@order).deliver
-        Notifier.order_confirmed(@order).deliver
         format.xml { render :xml => @order, :status => :created,
         :location => @order }
+        
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @order.errors, :status => :unprocessable_entity }
@@ -89,13 +88,19 @@ class OrdersController < ApplicationController
   # DELETE /orders/1
   # DELETE /orders/1.xml
   def confirm
+    
     @order = Order.find(params[:id])
+    
+    
     
     @order.line_items.each do |line_item|
       line_item.status = LineItem::VERIFIED
       line_item.save!
+      
     end
     
+    Notifier.order_received(@order).deliver
+    Notifier.order_confirmed(@order).deliver
     # respond_to do |format|
       redirect_to(thanks_url)
       # format.xml  { render :xml => @order }
