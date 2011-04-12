@@ -13,8 +13,6 @@
 <% @products.each do |product| %>
 <div class="entry"> 
 
-	
-	
 	<h3><%= product.title %></h3>	
 	<%= image_tag(product.image_url, :height => '700') %>
 	<IT><%=sanitize product.description %></IT>

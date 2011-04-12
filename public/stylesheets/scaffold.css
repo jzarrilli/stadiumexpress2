@@ -1,15 +1,16 @@
-IT{
-	font-style:italic;
-}
+IT {font-style:italic;}
 
-BD{font-weight:bold;}
+BD {font-weight:bold;}
 
-body { background-color: black; 
+body { 
+	background-color: black; 
 	color: white; 
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 40px;
 }
 
 
-
+/*
 body, ol, ul{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
@@ -17,20 +18,11 @@ body, ol, ul{
   text-align: center;
 }
 
-body, td,li{
-  font-family: verdana, arial, helvetica, sans-serif;
+body, td, li{
   font-size:   50px;
   line-height: 0.75em;	
   text-align: center;
-}
-
-
-h3{
-  font-size:   50px;
-  color: white;
-  font-family: helvetica;
-  text-align: center;
-}
+}*/
 
 
 pre {
