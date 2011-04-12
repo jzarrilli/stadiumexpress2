@@ -20,7 +20,7 @@ Depot::Application.configure do config.action_mailer.delivery_method = :smtp
   	#:enable_starttls_auto => true,
   	:domain => "stadiumexpress.heroku.com",
   	:user_name => "stadiumexp@gmail.com",
-  	:password => "stadium10",
+  	:password => "stadium1express",
   }
   config.action_mailer.raise_delivery_errors=true
 end

@@ -4,5 +4,5 @@ ActionMailer::Base.smtp_settings = {
 	:authentication => :plain,
 	:domain => ENV['stadiumexpress.heroku.com'],
 	:user_name => ENV['stadiumexp@gmail.com'],
-	:password => ENV['stadium10'],
+	:password => ENV['stadium1express'],
 }
