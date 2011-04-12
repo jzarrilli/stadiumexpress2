@@ -237,8 +237,12 @@ dusty green #58A171
 	line-height:1.5em;
 	text-align: left;
 }
-
-
+#main2 .order_list{
+	text-align: center;
+}
+#main2 #history .order_list td{
+	text-align: center;
+}
 
 /*Commented out CSS*/
 
