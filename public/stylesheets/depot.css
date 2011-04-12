@@ -1,15 +1,3 @@
-/* Global styles */
-*@font-face {
-    font-family: 'StMarieThin';
-    src: url('stmarie-thin-webfont.eot');
-    src: url('stmarie-thin-webfont.eot?iefix') format('eot'),
-         url('stmarie-thin-webfont.woff') format('woff'),
-         url('stmarie-thin-webfont.ttf') format('truetype'),
-         url('stmarie-thin-webfont.svg#webfont5hcmjba2') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
 /*common colors
 light orange #FFDABF darker organge #EEAA77
 light blue Powderblue
@@ -20,15 +8,7 @@ dusty blue #0099CC (now 00638B) 2A458B
 dusty green #58A171
 */
 
-#store .entry form, #store .entry form div {
-	display: inline;
-}
-
-#store .entry {
-	text-align: center;
-	font-color: white;
-}
-
+/*Menu Items*/
 #store #notice {
         color: white;
         border: 2px solid red;
@@ -38,7 +18,7 @@ dusty green #58A171
         font: bold smaller sans-serif;
 }
 
-
+/*All h1 headers*/
 #store h1 {
     	font: Tahoma, sans-serif;
 		font-size: 45px;
@@ -48,13 +28,21 @@ dusty green #58A171
 		text-align: left;
 }
 
+/*All h2 headers*/
 #store h2{
 	font-size: 40px;
 	font-color: white;
 }
 
-/*venue and stand double space*/
+/*All h3 headers*/
+#store h3{
+  font-size: 50px;
+  color: white;
+  font-family: helvetica;
+  text-align: center;
+}
 
+/*double spacing the store and vendor*/
 #store table tr td{
 	line-height: 1.5em;
 }
@@ -63,16 +51,7 @@ dusty green #58A171
 	line-height: 1.5em;
 }
 
-#main .total_line{
-	line-height: 1.5em;
-	width: 20%;
-	font-weight: bold;
-	
-}
-
-/* START:mainlayout */
-/* Styles for main page */
-
+/*Banner Layout*/
 #banner {
   font: Tahoma;
   background: black;
@@ -85,36 +64,28 @@ dusty green #58A171
   width: 99.99%;
 }
 
+/*Banner Image Layout*/
 #banner img {
   float: center;
   width: 95%;
-/*  border-color: #F1F0FF;
-*/}
+}
 
-
+/*Stripe Layout*/
 #stripe{
 	background: black;
 	color: white;
 	vertical-align: top;
-/*	padding-top:0px;
-*/	padding-right: 0px ;
+	padding-right: 0px ;
 	padding-left: 45px;
 	border-bottom:0em solid white;
-/*	border: 5px solid #383838;
-*/	font-size:20px;
+    font-size:20px;
 	line-height: 2em;
 	text-align: right;
     width: 96%;
 }
 
 /* Styles for the cart in the stripe */
-#cart, #cart table { 
-	font-size: smaller; 
-	background: black;
-/*	padding-left: .5em;
-*/}
-
-#cart table { 
+#stripe #cart table { 
 	border-top: 3px;
 	border-bottom: 3px;
 	margin-bottom: 10px;
@@ -124,61 +95,41 @@ dusty green #58A171
 	width: 90%
 }
 
-#cart .cart_title{
+/*Style of "Your Cart" - if this does not change, it is overwritten by h1*/
+#stripe #cart .cart_title{
 	font-weight: bold;
 	color: white;
 	font-style: italic;
 	background: black;
-	font-size:24px;
+	font-size:45px;
 	padding-top: 1em;
 	padding-bottom: .5em;
 	border-bottom: 1px solid white;
 	width: 95%
 }
 
-#cart .total_line tr{
-  font-weight:bold;
-  font-size: 24px;
-  font-style: italic;
-  line-height: 1em;
-  background: black;
-}
-
-#cart .total_cell td{
-  font-size: 10px;
-  font-style: italic;
-  line-height: 1em;
-  font-weight:bold;
-  background: black;
-}
-
-/*#columns {
-  background: #383838;
-  width: 100%;
-
-}*/
-
+/*User body formatting for all pages (everything below stripe and above bottom)*/
 #main {
-  padding-left: 5%; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
+  padding-left: 5%;
   padding-top: .02em;
   padding-bottom: 10px;
   background: black;
-  width: 95%; /*1175px goog*/
+  width: 90%; /*1175px goog*/
 }
 
+/*Formatting for having Vendor Login in the Bottom of each page*/
 #bottom {
   padding-top: .02em;
   padding-bottom: 30px;
   background: black;
-  width: 99.9%; /*1175px goog*/
+  width: 99.9%;
   text-align: center;
   font-color: white;
   font-size: 20px;
   font-style: italic;
 }
 
-
-
+/*Vendor body formatting for all pages (everything below stripe and above bottom)*/
 #main2 {
   padding-left: 5%;
   padding-bottom: 10em;
@@ -187,26 +138,7 @@ dusty green #58A171
   font-color: white;
   width: 95%;
   line-height: 1.25em;
-  
 }
-
-#main2 h1{
-	font-size: 40px;
-	font-color: white;
-}
-
-#main2 table tr{
-	font-size: 25px;
-	text-align: left;
-	font-color: white;
-}
-
-#main2 table td, #main2 table th{
-	font-size: 25px;
-	text-align: left;
-    font-color: white;
-}
-
 
 
 #side2 {
@@ -220,150 +152,31 @@ dusty green #58A171
   line-height: 1em;
 }
 
-/*side font*/
-#side a {
-  color: white;
-  font-size: 40px;
-  line-height: 1em;
-}
-#side2 a {
-  color: Powderblue;
-  font-size: 15px;
-  line-height: 1em;
-}
-
-#columns.cust{
-	color: red;
-  font-size: 24px;
-}
-
-/* END:mainlayout */
-
-/* Styles for the cart in the main page */
-#store body{
-	width: 80%;
-}
-
-#store .cart_title {
-font-weight: 300% bold;
-font-size: 50px;
-}
-#store .item_price, #store .total_line {
-text-align: right;
-}
-#store .total_line .total_cell {
-font-weight: bold;
-border-top: 1px solid #595;
-text-align:center;
-}
-
-.cart_items td{
-	text-align:left;
-}
-
-.cart_items .subj td{
-	font-weight:bold;
-	border-bottom:2px solid #009999;
-	color:black;
-	text-align:left;
-}
-
-#cart table .tot td{
-	font-style:italic;
-}
-
-
-/* Styles for the cart in the sidebar */
+/* Styles for the cart in the stripe */
 #cart, #cart table td{
-font-size: 40px;
-color: white;
-width: 100%;
-text-align: left;
-background-color:black;
+	font-size: 40px;
+	color: white;
+	width: 100%;
+	text-align: left;
+	background-color:black;
 }
 
-#main .total_line td{
-  font-weight:bold;
-  font-size: 40px;
-  font-style: italic;
-  line-height: 1em;
-  color: #253B78;
-
-
-}
-#cart .total_cell td{
-  font-size: 40px;
-  color: #CCFFCC;
-  font-style: italic;
-  line-height: 1em;
-  font-weight:bold;
-
-}
-
-
-
-#cart table {
-/*border-top: 3px dotted Midnightblue;
-*/border-bottom: 0 dotted white;
-margin-bottom: 10px;
-}*/
-
-
-
-/* START:form */
-/* Styles for order form */
-
-
-
-.depot_form legend {
-  color: white;
-  background: black;
-  border: 4px solid white;
-  font-family: sans-serif;
-  padding: 0.2em .5em;
-}
-
-.depot_form label {
-  width: 10em;
-  float: left;
-  text-align: left;
-  padding-top: 0.2em;
-  margin-right: 0.1em;
-  display: block;
-}
-
+/*Sizing of text boxes in forms*/
 .depot_form select, .depot_form textarea, .depot_form input {
-  padding-top: .5em;
-  padding bottom: .5em;
-  margin-left: 0.2em;
+	  padding-top: 4em;
+	  padding bottom: .5em;
 }
 
-.depot_form .submit {
-  margin-left: 2em;
-}
-
+/*Margin around*/
 .depot_form div {
   margin: 0.5em;
 }
-/* END:form */
 
-
-/*VENDOR FORMATTING
-
-/* Styles for orders/index */
-#order
 
 /* Styles for products/index */
 #product_list table {
-  border-collapse: collapse;
-  border: 4px solid white;
-}
-
-#product_list table tr td {
-  padding: 5px;
-  vertical-align: center;
-  text-align: center;
-  line-height: 1.25em;
+	  border-collapse: collapse;
+	  border: 4px solid white;
 }
 
 #product_list .list_image {
@@ -373,17 +186,22 @@ margin-bottom: 10px;
 }
 
 #product_list .list_description {
-  width:        60%;
+  width: 60%;
 }
 
+/*Formatting for product list*/
 #product_list .list_description dl {
-        margin: 0;
+	font-size: 20px;
+    margin: 0;
+    line-height: 1.75em;
+	width: 25em;
+
 }
 
 #product_list .list_description dt {
 	color:        white;
 	font-weight:  bold;
-	font-size:    larger;
+	font-size:    30px;
 }
 
 #product_list .list_description dd {
@@ -407,47 +225,119 @@ margin-bottom: 10px;
 
 .confirmation{
 	background: black;
-/*	border: 4px solid #383838;
-*/	line-height:1.2em;
+	line-height:1.2em;
 }
 
-.location{
+.subj{
+	text-align:left;
+}
+
+#form{
+	background: black;
+	line-height:1.5em;
+	text-align: left;
+}
+
+
+
+/*Commented out CSS*/
+
+/*
+.depot_form legend {
+  color: white;
+  background: black;
+  border: 4px solid white;
+  font-family: sans-serif;
+  padding: 0.2em .5em;
+}*/
+
+/*.depot_form label {
+  width: 10em;
+  float: left;
+  text-align: left;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}*/
+
+/*#store .entry form, #store .entry form div {
+	display: inline;
+}*/
+
+/*#store .entry {
+	text-align: center;
+	font-color: white;
+}*/
+
+/*#main .total_line{
+	line-height: 1.5em;
+	width: 100%;
+	font-weight: bold;
+}*/
+
+/*#cart, #cart table { 
+	font-size: smaller; 
+	background: black;*/
+/*	padding-left: .5em;
+*/
+
+/*#stripe #cart .total_line tr{
+  font-weight:bold;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1em;
+  background: black;
+}*/
+
+/*#stripe #cart .total_cell td{
+  font-size: 60px;
+  font-style: italic;
+  line-height: 1em;
+  font-weight:bold;
+  background: black;
+}*/
+
+/*#main2 table tr{
+	font-size: 25px;
+	text-align: left;
+	font-color: white;
+}
+
+#main2 table td, #main2 table th{
+	font-size: 25px;
+	text-align: left;
+    font-color: white;
+}*/
+
+/*#store body{
+	width: 80%;
+}*/
+
+/*.location{
 	padding: .1em;
 	background: white;
 	font-style: italic;
 	color: #EFE66E;
-}
+}*/
 
-.stand_lines a { /*color: #EFE66E;*/ 
+
+/*.stand_lines a { 
 	padding: .2em;
 	margin-bottom: 3em;
 	background-color:black; 
-/*	border: 2px solid #CDCDCD;
-*/	padding:.2em;
+	padding:.2em;
 	line-height:2em;
 	 }
-	
+	*/
 /*.stand_lines a:hover { color: Azure; 
 		background-color:#383838; 
 		border: 2px solid #0099CC;
 		padding:.2em;
 		}*/
 		
-.cart_items{
-	background:#EBF1FF;
-/*	border: 0px solid #383838;
-*/	padding-left: .5em;
-	padding-right: 1em;
-	text-align:left;
-}
-
-.subj{text-align:left;}
-
-#form{
-	background: black;
-/*	border: 5px solid #383838;
-*/	line-height:1.5em;
-	text-align: left;
-/*	padding: .5em;
-	margin-left: .5em;*/
-}
+		/*.cart_items{
+			background:#EBF1FF;
+			padding-left: .5em;
+			padding-right: 1em;
+			text-align:left;
+		}*/

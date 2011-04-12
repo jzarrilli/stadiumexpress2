@@ -5,7 +5,7 @@
  <%= javascript_include_tag :defaults %> <%= csrf_meta_tag %>
 </head> 
 
-<body	id="store" >
+<body id="store" >
 	<div id="banner"> 
 		<%= link_to image_tag("StadiumExpressLogo.png", :border => 0 ), root_path %>
 	<!--	<%= @page_title || "      Stadium Express" %>-->
@@ -40,9 +40,7 @@
 		
 			<% if session[:user_id] %>
 				<div id="stripe">
-					<div id="cart">
-						<%= render current_cart unless @hide_cart %>
-					</div>
+					
 					<table>
 						<tr>
 							<td> <%= link_to image_tag("UserHome.png", :border => 0), root_path%> </td>
@@ -53,7 +51,9 @@
 							<td> <%= link_to image_tag("logout.png", :border =>0), logout_path, :method => :delete %> </td>
 						</tr>
 					</table>
-
+					<div id="cart">
+						<%= render current_cart unless @hide_cart %>
+					</div>
 				</div> 
 				
 				<% if flash[:notice] %>
