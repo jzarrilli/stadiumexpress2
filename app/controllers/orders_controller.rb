@@ -58,6 +58,7 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         Notifier.order_received(@order).deliver
+        Notifier.order_confirmed(@order).deliver
         format.html { redirect_to(@order, :notice =>
         'Please confirm order.') }
         format.xml { render :xml => @order, :status => :created,

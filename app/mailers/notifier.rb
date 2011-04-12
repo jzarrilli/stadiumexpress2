@@ -18,10 +18,9 @@ class Notifier < ActionMailer::Base
   #
   #   en.notifier.order_shipped.subject
   #
-  def order_shipped
-    @greeting = "Hi"
-
-    mail :to => order.email
+  def order_confirmed(order)
+    @order = order
+    mail :to => "detkinlab@gmail.com", :subject => 'Stadium Express Order Received'
   end
   
 end
