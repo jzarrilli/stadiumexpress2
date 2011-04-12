@@ -83,12 +83,12 @@ class ProductsController < ApplicationController
   
   def who_bought
     @product = Product.find(params[:id])
-   / @order = Order.find(params[:id])*/
+    @order = Order.find(params[:id])
     
     respond_to do |format|
       format.atom
       format.xml { render :xml => @product }
-      /format.xml { render :xml => @order }*/
+      format.xml { render :xml => @order }
       
     end
   end

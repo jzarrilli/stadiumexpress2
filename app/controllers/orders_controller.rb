@@ -115,12 +115,10 @@ class OrdersController < ApplicationController
   end
 
   def who_ordered
-    /@product = Product.find(params[:id])*/
     @orders = Order.all.sort_by(&:updated_at)
-
+  
     respond_to do |format|
       format.atom
-      /format.xml { render :xml => @product }*/
       format.xml { render :xml => @order }
     end
     
