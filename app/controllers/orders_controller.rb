@@ -57,10 +57,10 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        Notifier.order_received(@order).deliver
-        Notifier.order_confirmed(@order).deliver
         format.html { redirect_to(@order, :notice =>
         'Please confirm order.') }
+        Notifier.order_received(@order).deliver
+        Notifier.order_confirmed(@order).deliver
         format.xml { render :xml => @order, :status => :created,
         :location => @order }
       else
