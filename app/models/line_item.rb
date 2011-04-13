@@ -8,6 +8,18 @@ class LineItem < ActiveRecord::Base
   FILLED = 3
   PICKED_UP = 4
   
+  def word
+    if status == 2
+      "Waiting"
+    else
+      if status == 3
+        "Filled"
+      end
+    # else 
+    #    "Picked-Up"
+    end
+  end 
+  
   validates :product_id, :presence => true
   # validates :cart_id, :presence => true,
 
