@@ -26,6 +26,7 @@ dusty green #58A171
         color: white;
 		line-height: 1.5em;
 		text-align: left;
+		width: 90%;
 }
 
 /*All h2 headers*/
@@ -167,10 +168,17 @@ dusty green #58A171
 	  padding bottom: .5em;
 }
 
+/*Sizing of text boxes once logged in*/
+.log .depot_form select, .depot_form textarea, .depot_form input {
+	  padding-top: 2em;
+	  padding bottom: .5em;
+}
+
 /*Margin around*/
 .depot_form div {
   margin: 0.5em;
 }
+
 
 
 /* Styles for products/index */

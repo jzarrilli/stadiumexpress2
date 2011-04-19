@@ -2,14 +2,15 @@
 <div class="depot_form"> 
    <%= form_tag do %>
 	<div id="log">
-		<table> 
+		<table cellpadding="5"> 
 			<tr> 
-				<td><img src="/images/name.png"/></td>
-				<td><%= text_field_tag :name, params[:name], :size => 55 %></td>
+				<td colspan ="2"><img src="/images/name.png" valign="bottom";/></td>
+				<td colspan ="2" valign="top"><%= text_field_tag :name, params[:name], :size => 55 %> </td>
 			</tr> 
 			<tr> 
-				<td><img src="/images/password.png"/></td>
-				<td><%= password_field_tag :password, params[:password], :size => 55  %></td>
+				<td colspan ="2" ><img src="/images/password.png" valign="bottom"/></td>
+				<td colspan ="2" valign="top"><%= password_field_tag :password, params[:password], :size => 55  %></td>
+		<tr></br></tr>
 			</tr>
             <tr>
 	            <td></td>
