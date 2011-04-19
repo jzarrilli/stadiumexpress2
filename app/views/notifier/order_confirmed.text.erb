@@ -1,7 +1,11 @@
 
 Dear vendor, 
 
-<%= @order.name %> ordered the following items: 
+<%= @order.name %> seating at Seat <%= @order.address %> ordered the following items: 
 
-<%= render @order.line_items %> 
+<%= render @order.line_items%> 
+
+Total Price is <%=number_to_currency @order.total_price %>
+
+Paid by <%= @order.pay_type %>
 
