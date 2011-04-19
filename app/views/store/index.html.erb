@@ -13,17 +13,20 @@
 <% @products.each do |product| %>
 <div class="entry"> 
 
-	<h3><%= product.title %></h3>	
-	<%= image_tag(product.image_url, :height => '700') %></br></br>
-	<IT><%=sanitize product.description %></IT>
-	<div id="price_line">
-		<span class="price">
-			<%= number_to_currency(product.price) %></br></br>
-			<td>
-				&nbsp
-			</td>
-		</span> 
-	</div>
+	<h3><%= product.title %></h3>
+	<table align = "center">
+		<tr><td><%= image_tag(product.image_url, :height => '700') %></td></tr>
+		<tr><td><IT><%= product.description %></IT></td></tr>
+			<tr><td>	&nbsp</td></tr>
+		<div id="price_line">
+			<span class="price">
+				<td><%= number_to_currency(product.price) %></td></br></br>
+				<td>
+					&nbsp
+				</td>
+			</span> 
+		</div>
+	</table>
 	<div style= "width:95%;height:200px;border-bottom:1px solid white;">	
 		<td class="stand_lines"><%= link_to image_tag("add_to_cart.png", :border =>0, :size => '400x150'), line_items_path(:product_id => product), :method => :post%></td>
 	</div>
