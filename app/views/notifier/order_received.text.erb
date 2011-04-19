@@ -4,14 +4,15 @@ Thank you for your recent order from Stadium Express!
 
 You ordered the following items: 
 
-<%= render @order.line_items %> 
+<%=render @order.line_items %> 
 
+Total Price = <%=number_to_currency @order.total_price %> 
+
+You paid using <%= @order.pay_type %>.
 Come down to the Stadium Express Stand to pick up your order. 
-
 ______
 
-
-Again, thank you for participating! If you have any feedback regarding the Stadium Express product, please do not hesitate to reach out to us. Either come tell us at the stand or email us at Lindsey.eatough@gmail.com.
+Again, thank you for participating! If you have any feedback regarding the Stadium Express product, please do not hesitate to reach out to us. Either come tell us at the stand or email us at stadiumexp@gmail.com.
 
 Also, don’t forget - The Penn Relays are coming back to historic Franklin Field on April 28-30. See the best Track and Field athletes in the world compete and witness a true Philadelphia tradition. Tickets are available now by calling 1–855–UofP–TIX or online at ThePennRelays.com.
 
