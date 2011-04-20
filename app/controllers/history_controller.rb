@@ -3,9 +3,7 @@ class HistoryController < ApplicationController
   
   def index
     @line_items = LineItem.where(:status => [LineItem::VERIFIED, LineItem::PICKED_UP])
-    # @line_items = @line_items.order('created_at desc')
-    @historys = @line_items.paginate :page=>params[:page], :order=>'created_at desc',
-    :per_page => 10
+    @line_items = @line_items.order('created_at desc')
     
     respond_to do |format|
       format.html # index.html.erb
